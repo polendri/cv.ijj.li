@@ -1,1 +1,245 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paul Hendry - Software Developer</title>
+    <meta name="description" content="Paul Hendry is a software developer based in Ontario, Canada.">
+    <meta name="keywords" content="software,programming,development,game,games">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper" class="active">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav">
+          <li class="sidebar-brand"><a id="menu-toggle" href="#">Paul Hendry<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+          <li class="side_photo sidebar-brand visible-lg visible-md active">
+            <img alt="photo" class="img-responsive" width="190px" height="122px" src="img/photo-sm.jpg"></img>
+          </li>
+        </ul>
+        <ul id="sidebar" class="sidebar-nav">     
+          <li>
+            <a href="#about" title="About Me">
+              About Me<span class="sub_icon glyphicon glyphicon-user"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#education" title="Education">
+              Education<span class="sub_icon glyphicon glyphicon-book"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#profession" title="Profession">
+              Profession<span class="sub_icon glyphicon glyphicon-briefcase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" title="Contact">
+              Contact<span class="sub_icon glyphicon glyphicon-link"></span>
+            </a>
+          </li>
+        </ul>
+        <ul id="sidebar_links" class="sidebar-nav">     
+          <li>
+            <a href="projects" title="Projects">
+              Projects<span class="sub_icon glyphicon glyphicon-folder-open"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          <div id="about" class="row row-pad container-full2 page" style="height: auto">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h3 style="text-align: center">
+                About Me
+              </h3>
+              <hr></hr>
+              <p>
+                Hi, I'm Paul, and I'm a programmer, a lapsed runner, a video game fan, an amateur digital artist,
+                an outdoorsman, and a mathematics enthusiast based in Kitchener, Ontario, Canada.
+              </p>
+              <p>
+                I completed my Bachelor of Mathematics at the University of Waterloo in 2013, and
+                since then I've been working as a Software Developer at <a href="http://www.magnetforensics.com" target="_blank">Magnet Forensics</a>.
+              </p>
+              <p>
+                When I'm not at work building digital forensics software in C#, I'm typically hacking
+                away at <a href="projects">my personal coding projects</a>, visiting friends and
+                family, tinkering with my bicycle or my guitar, going out for walks, or just settling
+                down with a video game or some Netflix.
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h3 style="text-align: center">
+                My Technical Skillset
+              </h3>
+              <hr></hr>
+              <table class="table table-bordered">
+                <tr>
+                  <td></td>
+                  <th>Razor Sharp</th>
+                  <th>Simmering</th>
+                  <th>Rusty</th>
+                  <th>Novice</th>
+                </tr>
+                <tr>
+                  <th>Enthusiastic</td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
+                      Git
+                    </a>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I've been working with C# day-to-day for nearly two years, and it's my favourite language for getting things done.">
+                      C#
+                    </a>
+                  </td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so I can continue learning it.">
+                      Haskell
+                    </a>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="My Thinkpad runs Ubuntu, and I've been fiddling with Linux distros since I was a teenager.">
+                      Linux
+                    </a>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
+                      Rust
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Content</td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="Mobile digital forensics means hacking together a lot of SQLite queries.">
+                      SQL
+                    </a>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="It's massive, it can be slow, but it's a great tool, and I use it daily at Magnet Forensics.">
+                      Visual Studio
+                    </a>
+                  </td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I'm no expert, but I've done hobby work and some brief professional JavaScript coding.">
+                      Javascript
+                    </a>
+                  </td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I've only briefly done it professionally, but I know the basics of HTML,
+                       CSS and JavaScript. Let this site be a testament!">
+                      Web Dev
+                    </a>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
+                      C
+                    </a>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I never did master modern C++, but I know my way around the basics.">
+                      C++
+                    </a>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
+                      Java
+                    </a>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Begrudging</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <a class="btn btn-default"
+                       href="#"
+                       role="button"
+                       data-toggle="tooltip"
+                       title="I've tried several times, but the complexity of Android development turns me away, for hobby projects at least.">
+                      Android Dev
+                    </a>
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="education" class="row row-pad container-full2 page" style="height: auto">
+            <h2 style="text-align: center">
+              Education
+            </h2>
+            <hr></hr>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="libs/jquery/1.11.1/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="libs/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
