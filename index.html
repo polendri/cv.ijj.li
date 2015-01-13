@@ -93,146 +93,161 @@
                 My Professional Skillset
               </h3>
               <hr></hr>
-              <table class="table table-bordered">
-                <tr>
-                  <td></td>
-                  <th>Expert</th>
-                  <th>Intermediate</th>
-                  <th>Novice</th>
-                </tr>
-                <tr>
-                  <th>Razor Sharp</td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I've been working with C# day-to-day for nearly two years, and it's my favourite language for getting things done.">
-                      C#
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="It's massive, it can be slow, but it's a great tool, and I use it daily at Magnet Forensics.">
-                      Visual Studio
-                    </a>
-                  </td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
-                      Git
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="Mobile digital forensics means hacking together a lot of SQLite queries.">
-                      SQL
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="My Thinkpad runs Ubuntu, and I've been fiddling with Linux distros since I was a teenager.">
-                      Linux
-                    </a>
-                  </td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
-                      Rust
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Simmering</td>
-                  <td></td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so I can continue learning it.">
-                      Haskell
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I'm no expert, but I've done hobby work and some brief professional JavaScript coding.">
-                      Javascript
-                    </a>
-                  </td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I've only briefly done it professionally, but I know the basics of HTML,
-                       CSS and JavaScript. Let this site be a testament!">
-                      Web Dev
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Rusty</td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="Ça fait longtemps depuis que j'ai eu la chance de bien pratiquer mon Français, mais mon éducation jusqu'à la 11e année s'est déroulé entièrement en langue Française.">
-                      French
-                    </a>
-                  </td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
-                      C
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I never did master modern C++, but I know my way around the basics.">
-                      C++
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
-                      Java
-                    </a>
-                  </td>
-                  <td>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="I've tried several times, but the complexity of Android development turns me away, for hobby projects at least.">
-                      Android Dev
-                    </a>
-                    <a class="btn btn-default btn-sm"
-                       href="#"
-                       role="button"
-                       data-toggle="tooltip"
-                       title="Mio Italiano non è bene, ma so i fondimenti.">
-                      Italian
-                    </a>
-                  </td>
-                </tr>
-              </table>
+              <div class="filterable">
+                <div class="filter-group btn-group" role="group">
+                  <button type="button" class="filter btn btn-sm gray">All</button>
+                  <button type="button" class="filter btn btn-sm green">Programming</button>
+                  <button type="button" class="filter btn btn-sm orange">Dev Ops</button>
+                  <button type="button" class="filter btn btn-sm blue">Language</button>
+                </div>
+                <table id="skillset-table" class="table table-bordered">
+                  <tr>
+                    <td></td>
+                    <th>Expert</th>
+                    <th>Intermediate</th>
+                    <th>Novice</th>
+                  </tr>
+                  <tr>
+                    <th>Razor Sharp</td>
+                    <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I've been working with C# day-to-day for nearly two years, and it's my favourite language for getting things done.">
+                        C#
+                      </a>
+                      <a class="filter-item btn btn-sm orange dev-ops"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="It's massive, it can be slow, but it's a great tool, and I use it daily at Magnet Forensics.">
+                        Visual Studio
+                      </a>
+                      <a class="filter-item btn btn-sm blue language"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="Excellent communication and documentation are as important to me as code.">
+                        English
+                      </a>
+                    </td>
+                    <td>
+                      <a class="filter-item btn btn-sm orange dev-ops"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
+                        Git
+                      </a>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="Mobile digital forensics means hacking together a lot of SQLite queries.">
+                        SQL
+                      </a>
+                      <a class="filter-item btn btn-sm orange dev-ops"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="My Thinkpad runs Ubuntu, and I've been fiddling with Linux distros since I was a teenager.">
+                        Linux
+                      </a>
+                    </td>
+                    <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
+                        Rust <span class="glyphicon glyphicon-star">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Simmering</td>
+                    <td></td>
+                    <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so I can continue learning it.">
+                        Haskell <span class="glyphicon glyphicon-star">
+                      </a>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I'm no expert, but I've done hobby work and some brief professional JavaScript coding.">
+                        Javascript
+                      </a>
+                    </td>
+                    <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I've only briefly done it professionally, but I know the basics of HTML,
+                         CSS and JavaScript. Let this site be a testament!">
+                        Web Dev
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Rusty</td>
+                    <td>
+                      <a class="filter-item btn btn-sm blue language"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="Ça fait longtemps depuis que j'ai eu la chance de bien pratiquer mon Français, mais mon éducation jusqu'à la 11e année s'est déroulé entièrement en langue Française.">
+                        French
+                      </a>
+                    </td>
+                    <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
+                        C
+                      </a>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I never did master modern C++, but I know my way around the basics.">
+                        C++
+                      </a>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
+                        Java
+                      </a>
+                    </td>
+                    <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I've tried several times, but the complexity of Android development turns me away, for hobby projects at least.">
+                        Android Dev
+                      </a>
+                      <a class="filter-item btn btn-sm blue language"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="Mio Italiano non è bene, ma so i fondimenti.">
+                        Italian
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
           <div id="education" class="row row-pad container-full2 page" style="height: auto">
