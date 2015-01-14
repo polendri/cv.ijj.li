@@ -68,13 +68,13 @@
         <!-- Keep all page content within the page-content inset div! -->
         <div class="page-content inset">
           <div id="about" class="row row-pad container-full2 page" style="height: auto">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <h3 style="text-align: center">
+            <div class="col-lg-6 col-md-12">
+              <h2 style="text-align: center">
                 About Me
-              </h3>
+              </h2>
               <hr></hr>
               <p>
-                Hi, I'm Paul, and I'm a programmer, a lapsed runner, a video game fan, an amateur digital artist,
+                Hi, I'm Paul, and I'm a programmer, a video game fan, a lapsed runner, an amateur digital artist,
                 an outdoorsman, and a mathematics enthusiast based in Kitchener, Ontario, Canada.
               </p>
               <p>
@@ -88,17 +88,18 @@
                 down with a video game or some Netflix.
               </p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <h3 style="text-align: center">
+            <div id="skillset-section" class="col-lg-6 col-md-12">
+              <h2 style="text-align: center">
                 My Professional Skillset
-              </h3>
+              </h2>
               <hr></hr>
               <div class="filterable">
                 <div class="filter-group btn-group" role="group">
                   <button type="button" class="filter btn btn-sm gray">All</button>
                   <button type="button" class="filter btn btn-sm green">Programming</button>
-                  <button type="button" class="filter btn btn-sm orange">Dev Ops</button>
-                  <button type="button" class="filter btn btn-sm blue">Language</button>
+                  <button type="button" class="filter btn btn-sm blue">Dev Ops</button>
+                  <button type="button" class="filter btn btn-sm orange">Language</button>
+                  <button type="button" class="filter btn btn-sm purple">Favourites</button>
                 </div>
                 <table id="skillset-table" class="table table-bordered">
                   <tr>
@@ -110,7 +111,7 @@
                   <tr>
                     <th>Razor Sharp</td>
                     <td>
-                      <a class="filter-item btn btn-sm green programming"
+                      <a class="filter-item btn btn-sm green programming favourites"
                          href="#"
                          role="button"
                          data-toggle="tooltip"
@@ -147,7 +148,7 @@
                          title="Mobile digital forensics means hacking together a lot of SQLite queries.">
                         SQL
                       </a>
-                      <a class="filter-item btn btn-sm orange dev-ops"
+                      <a class="filter-item btn btn-sm orange dev-ops favourites"
                          href="#"
                          role="button"
                          data-toggle="tooltip"
@@ -156,12 +157,12 @@
                       </a>
                     </td>
                     <td>
-                      <a class="filter-item btn btn-sm green programming"
+                      <a class="filter-item btn btn-sm green programming favourites"
                          href="#"
                          role="button"
                          data-toggle="tooltip"
                          title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
-                        Rust <span class="glyphicon glyphicon-star">
+                        Rust
                       </a>
                     </td>
                   </tr>
@@ -169,12 +170,12 @@
                     <th>Simmering</td>
                     <td></td>
                     <td>
-                      <a class="filter-item btn btn-sm green programming"
+                      <a class="filter-item btn btn-sm green programming favourites"
                          href="#"
                          role="button"
                          data-toggle="tooltip"
                          title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so I can continue learning it.">
-                        Haskell <span class="glyphicon glyphicon-star">
+                        Haskell
                       </a>
                       <a class="filter-item btn btn-sm green programming"
                          href="#"
@@ -207,6 +208,13 @@
                       </a>
                     </td>
                     <td>
+                      <a class="filter-item btn btn-sm green programming"
+                         href="#"
+                         role="button"
+                         data-toggle="tooltip"
+                         title="I've briefly used Python for academic research and I've used Django at work.">
+                        Python
+                      </a>
                       <a class="filter-item btn btn-sm green programming"
                          href="#"
                          role="button"
@@ -248,13 +256,38 @@
                   </tr>
                 </table>
               </div>
+              <div id="skillset-hover-hint"><small>Hover over skills for details</small></div>
             </div>
           </div>
           <div id="education" class="row row-pad container-full2 page" style="height: auto">
-            <h2 style="text-align: center">
-              Education
-            </h2>
-            <hr></hr>
+            <div class="col-xs-12">
+              <h2 style="text-align: center">
+                Education
+              </h2>
+              <hr></hr>
+              <span class="work-year">2009 - 2013</span></br>
+              <span class="work-title"><b>Bachelor of Mathematics</b>, Joint Honours Computer Science / Combinatorics & Optimization, University of Waterloo</span></br>
+              <p>At UWaterloo I focused my studies primarily in applied and theoretical computer
+              science, cryptography, pure mathematics, and psychology. I also participated in
+              two 4-month research assistantships, one part-time and one full-time, where I
+              assisted Prof. Ian Goldberg in implementing a privacy-preserving messaging protocol.</p>
+            </div>
+          </div>
+          <div id="profession" class="row row-pad container-full2 page" style="height: auto">
+            <div class="col-xs-12">
+              <h2 style="text-align: center">
+                Profession
+              </h2>
+              <hr></hr>
+              <span class="work-year">Summer 2012</span></br>
+              <span class="work-title"><b>Undergraduate Research Assistant</b>, University of Waterloo</span></br>
+              <p>I worked under Professor Ian Goldberg to implement a provably anonymous protocol
+              for posting messages to Twitter. My tasks involved full implementation of the
+              protocol in Python, along with participating in the weekly meetings for the
+              cryptography and security research group (CRYSP). While I decided against pursuing research after
+              graduation, I found the exposure to academic research extremely valuable, and it
+              is definitely something I am still considering for the future.
+            </div>
           </div>
         </div>
       </div>

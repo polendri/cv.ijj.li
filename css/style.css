@@ -157,16 +157,16 @@
     border: none;
 }
 
-#skillset-table > tbody > tr > th {
+#skillset-section {
 }
 
 .gray { background-color: #818e97 }
 .green { background-color: #70c53d }
-.orange { background-color: #ff6337 }
 .blue { background-color: #6966e8 }
-.yellow { background-color: #f1e334 }
+.orange { background-color: #ff6337 }
 .purple { background-color: #a600ce }
 .teal { background-color: #00a6c2 }
+.yellow { background-color: #e1d324 }
 
 .filter-group {
     margin-bottom: 10px;
@@ -183,8 +183,35 @@
 }
 
 .filterable .filter.btn:hover {
-    color: #888;
-    background-color: #DDD;
+    color: #000;
+    background-color: #EEE;
+}
+
+#skillset-hover-hint {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.work-year {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.work-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#education, #profession {
+    padding-top: 30px;
+    background-color: #EEE;
+}
+
+#education hr, #profession hr {
+    border-color: #DDD;
 }
 
 @media (max-width:767px) {
