@@ -11,21 +11,23 @@ $(function () {
 
   // Handle filters
   $(".filterable .filter").click(function() {
-      var filterVal = $(this).text().toLowerCase().replace(' ','-');
-      if (filterVal == "all") {
-        $(this).parents().find(".filterable").find(".filter-item").each(function() {
+    $(".filterable .filter").removeClass("active");
+    var filterVal = $(this).text().toLowerCase().replace(' ','-');
+    if (filterVal == "all") {
+      $(this).parents().find(".filterable").find(".filter-item").each(function() {
+        $(this).animate({ opacity: 1 }, 200);
+      });
+    }
+    else {
+      $(this).parents().find(".filterable").find(".filter-item").each(function() {
+        if ($(this).hasClass(filterVal)) {
           $(this).animate({ opacity: 1 }, 200);
-        });
-      }
-      else {
-        $(this).parents().find(".filterable").find(".filter-item").each(function() {
-          if ($(this).hasClass(filterVal)) {
-            $(this).animate({ opacity: 1 }, 200);
-          }
-          else {
-            $(this).animate({ opacity: 0.25 }, 200);
-          }
-        });
-      }
+        }
+        else {
+          $(this).animate({ opacity: 0.25 }, 200);
+        }
+      });
+    }
+    $(this).addClass("active");
   });
 })

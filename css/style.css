@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 .row{
     margin-left:0px;
     margin-right:0px;
@@ -182,7 +186,7 @@
     margin: 2px 0px;
 }
 
-.filterable .filter.btn:hover {
+.filterable .filter.btn:hover, .filterable .filter.btn.active {
     color: #000;
     background-color: #EEE;
 }
@@ -212,6 +216,10 @@
 
 #education hr, #profession hr {
     border-color: #DDD;
+}
+
+.active_nav a .sub_icon {
+    color: #3CC;
 }
 
 @media (max-width:767px) {
