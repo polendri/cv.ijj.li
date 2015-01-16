@@ -222,6 +222,14 @@ body {
     color: #3CC;
 }
 
+.work-item {
+    margin-top: 10px;
+}
+
+#contact {
+    margin-bottom: 100px;
+}
+
 @media (max-width:767px) {
     #wrapper {
         padding-left: 70px;
