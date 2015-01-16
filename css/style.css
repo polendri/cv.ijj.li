@@ -218,6 +218,10 @@ body {
     border-color: #DDD;
 }
 
+#education, #profession, #contact {
+    padding-top: 30px;
+}
+
 .active_nav a .sub_icon {
     color: #3CC;
 }
