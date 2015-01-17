@@ -222,7 +222,7 @@ body {
     padding-top: 30px;
 }
 
-.active_nav a .sub_icon {
+.active_nav .sub_icon {
     color: #3CC;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 #contact {
-    margin-bottom: 100px;
+    padding-bottom: 300px;
 }
 
 .project {

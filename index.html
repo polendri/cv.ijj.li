@@ -34,22 +34,22 @@
         </ul>
         <ul id="sidebar" class="sidebar-nav">     
           <li>
-            <a href="#about" title="About Me">
+            <a id="about-nav" href="#about" title="About Me">
               About Me<span class="sub_icon glyphicon glyphicon-user"></span>
             </a>
           </li>
           <li>
-            <a href="#education" title="Education">
+            <a id="education-nav" href="#education" title="Education">
               Education<span class="sub_icon glyphicon glyphicon-book"></span>
             </a>
           </li>
           <li>
-            <a href="#profession" title="Profession">
+            <a id="profession-nav" href="#profession" title="Profession">
               Profession<span class="sub_icon glyphicon glyphicon-briefcase"></span>
             </a>
           </li>
           <li>
-            <a href="#contact" title="Contact">
+            <a id="contact-nav" href="#contact" title="Contact">
               Contact<span class="sub_icon glyphicon glyphicon-link"></span>
             </a>
           </li>
@@ -75,7 +75,7 @@
               <hr></hr>
               <p>
                 Hi, I'm Paul, and I'm a programmer, a video game fan, a lapsed runner, an amateur digital artist,
-                an outdoorsman, and a mathematics enthusiast based in Kitchener, Ontario, Canada.
+                an occasional outdoorsman, and a mathematics enthusiast based in Kitchener, Ontario, Canada.
               </p>
               <p>
                 I completed my Bachelor of Mathematics at the University of Waterloo in 2013, and
@@ -363,5 +363,31 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="libs/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function updateNav(id) {
+        var navTopPos = $(id).offset().top;
+        var navBottomPos = navTopPos + $(id).height();
+        var windowCenterPos = $(window).scrollTop() + ($(window).innerHeight() / 2.5);
+        if (windowCenterPos >= navTopPos - 10 && windowCenterPos < navBottomPos) {
+          $(id + "-nav").addClass('active_nav');
+        } else {
+          $(id + "-nav").removeClass('active_nav');
+        }
+      }
+
+      $(document).ready(function() {
+        updateNav("#about");
+        updateNav("#education");
+        updateNav("#profession");
+        updateNav("#contact");
+      });
+
+      $(window).on('scroll', function() {
+        updateNav("#about");
+        updateNav("#education");
+        updateNav("#profession");
+        updateNav("#contact");
+      });
+    </script>
   </body>
 </html>
