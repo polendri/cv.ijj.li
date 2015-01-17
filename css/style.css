@@ -234,6 +234,16 @@ body {
     margin-bottom: 100px;
 }
 
+.project {
+    height: 180px;
+    max-width: 360px;
+}
+
+#projects {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
 @media (max-width:767px) {
     #wrapper {
         padding-left: 70px;
