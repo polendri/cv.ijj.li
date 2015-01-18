@@ -230,10 +230,6 @@ body {
     margin-top: 10px;
 }
 
-#contact {
-    padding-bottom: 500px;
-}
-
 #projects {
     margin: 0 auto;
     max-width: 1440px;
@@ -286,6 +282,11 @@ body {
 .projectBox > .btn-group > a:hover {
     color: #000;
     background-color: #FFF;
+}
+
+footer {
+    text-align: center;
+    padding-top: 100px;
 }
 
 @media (max-width:767px) {
