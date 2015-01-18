@@ -368,7 +368,7 @@
         var navTopPos = $(id).offset().top;
         var navBottomPos = navTopPos + $(id).height();
         var windowCenterPos = $(window).scrollTop() + ($(window).innerHeight() / 2.5);
-        if (windowCenterPos >= navTopPos - 10 && windowCenterPos < navBottomPos) {
+        if (windowCenterPos >= navTopPos - 20 && windowCenterPos < navBottomPos) {
           $(id + "-nav").addClass('active_nav');
         } else {
           $(id + "-nav").removeClass('active_nav');
