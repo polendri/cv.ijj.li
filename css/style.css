@@ -209,8 +209,7 @@ body {
     margin-bottom: 5px;
 }
 
-#education, #profession {
-    padding-top: 30px;
+#education, #profession, #contact {
     background-color: #EEE;
 }
 
@@ -218,8 +217,8 @@ body {
     border-color: #DDD;
 }
 
-#education, #profession, #contact {
-    padding-top: 30px;
+#education, #profession, #contact, #projects {
+    padding: 30px 0;
 }
 
 .active_nav .sub_icon {
@@ -230,7 +229,7 @@ body {
     margin-top: 10px;
 }
 
-#projects {
+#projectsGrid {
     margin: 0 auto;
     max-width: 1440px;
 }

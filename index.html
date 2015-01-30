@@ -49,15 +49,13 @@
             </a>
           </li>
           <li>
-            <a id="contact-nav" href="#contact" title="Contact">
-              Contact<span class="sub_icon glyphicon glyphicon-link"></span>
+            <a id="projects-nav" href="#projects" title="Projects">
+              Projects<span class="sub_icon glyphicon glyphicon-folder-open"></span>
             </a>
           </li>
-        </ul>
-        <ul id="sidebar_links" class="sidebar-nav">     
           <li>
-            <a href="projects" title="Projects">
-              Projects<span class="sub_icon glyphicon glyphicon-folder-open"></span>
+            <a id="contact-nav" href="#contact" title="Contact">
+              Contact<span class="sub_icon glyphicon glyphicon-link"></span>
             </a>
           </li>
         </ul>
@@ -174,14 +172,14 @@
                          href="#"
                          role="button"
                          data-toggle="tooltip"
-                         title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so I can continue learning it.">
+                         title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so that I can continue learning it.">
                         Haskell
                       </a>
                       <a class="filter-item btn btn-sm green programming"
                          href="#"
                          role="button"
                          data-toggle="tooltip"
-                         title="I'm no expert, but I've done hobby work and some brief professional JavaScript coding.">
+                         title="I've done hobby stuff and some professional JavaScript coding.">
                         Javascript
                       </a>
                     </td>
@@ -197,7 +195,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th>Rusty</td>
+                    <th>A Little Rusty</td>
                     <td>
                       <a class="filter-item btn btn-sm orange language"
                          href="#"
@@ -212,7 +210,7 @@
                          href="#"
                          role="button"
                          data-toggle="tooltip"
-                         title="I've briefly used Python for academic research and I've used Django at work.">
+                         title="I've used Python for academic research, and I've used it with Django at work.">
                         Python
                       </a>
                       <a class="filter-item btn btn-sm green programming"
@@ -226,7 +224,7 @@
                          href="#"
                          role="button"
                          data-toggle="tooltip"
-                         title="I never did master modern C++, but I know my way around the basics.">
+                         title="I've written a respectable amount of C++, but it's a beast of a language so by no means would I call myself an expert!">
                         C++
                       </a>
                       <a class="filter-item btn btn-sm green programming"
@@ -242,7 +240,7 @@
                          href="#"
                          role="button"
                          data-toggle="tooltip"
-                         title="I've tried several times, but the complexity of Android development turns me away, for hobby projects at least.">
+                         title="I've found mobile development too complex for my hobby projects, so I haven't gotten far in Android development. I certainly could, though!">
                         Android Dev
                       </a>
                       <a class="filter-item btn btn-sm orange language"
@@ -270,7 +268,7 @@
                 <span class="work-title"><b>Bachelor of Mathematics</b>, Joint Honours Computer Science / Combinatorics & Optimization, <a href="http://www.uwaterloo.ca">University of Waterloo</a></span></br>
                 <p>At UWaterloo I focused my studies primarily in applied and theoretical computer
                 science, cryptography, pure mathematics, and psychology. I also participated in
-                two 4-month research assistantships, one part-time and one full-time, where I
+                two 4-month research assistantships (one part-time and one full-time) where I
                 assisted Prof. Ian Goldberg in implementing a privacy-preserving messaging protocol.</p>
               </div>
             </div>
@@ -337,6 +335,104 @@
               </div>
             </div>
           </div>
+          <div id="projects" class="row row-pad container-full2 page" style="height: auto">
+            <div class="col-xs-12">
+              <h2 style="text-align: center">
+                Projects
+              </h2>
+              <hr></hr>
+              <div id="projectsGrid" class="filterable container-full2">
+                <div class="filter-group btn-group" role="group">
+                  <button type="button" class="filter btn btn-sm gray">All</button>
+                  <button type="button" class="filter btn btn-sm green">Game</button>
+                  <button type="button" class="filter btn btn-sm blue">Tool</button>
+                  <button type="button" class="filter btn btn-sm orange">Writing</button>
+                  <button type="button" class="filter btn btn-sm purple">Misc</button>
+                </div>
+                <br/>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/peasants-vs-sires.png)">
+                  <div class="projectBox">
+                    <h1>Peasants vs Sires</h1>
+                    <p>
+                      A simple two-player tug-of-war game written in JavaScript.
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="http://pshendry.github.io/peasants-vs-sires/">Play</a>
+                      <a class="btn" target="_blank" href="https://github.com/pshendry/peasants-vs-sires">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item writing" style="background-image: url(img/projects/totm.png)">
+                  <div class="projectBox">
+                    <h1>Technology of the Month</h1>
+                    <p>
+                      A technology tutorial blog, in collaboration with others at Magnet Forensics.
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="http://pshendry.github.io/totm/">Read</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/DevQuest.png)">
+                  <div class="projectBox">
+                    <h1>DevQuest</h1>
+                    <p>
+                      Artwork and (some) coding for a highly unpolished hackathon game at Magnet Forensics in January 2015. Fun times!
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="http://pshendry.github.io/DevQuest/">Play</a>
+                      <a class="btn" target="_blank" href="https://github.com/pshendry/DevQuest">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item tool" style="background-image: url(img/projects/nurep.png)">
+                  <div class="projectBox">
+                    <h1>nurep</h1>
+                    <p>
+                      A basic replay viewer for planets.nu games.
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="https://github.com/pshendry/nurep">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item tool" style="background-image: url(img/projects/dsgen.png)">
+                  <div class="projectBox">
+                    <h1>dsgen</h1>
+                    <p>
+                      A utility for generating randomized card sets for Dominion (the board game).
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="https://github.com/pshendry/dsgen">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item misc" style="background-image: url(https://projecteuler.net/profile/pshendry.png); background-position: center; background-repeat: no-repeat; border: 1px solid grey">
+                  <div class="projectBox">
+                    <h1>Project Euler Solutions</h1>
+                    <p>
+                      Solutions to some of Project Euler's challenging mathematical/programming problems.
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="https://github.com/pshendry/project-euler-solutions">GitHub</a>
+                      <a class="btn" target="_blank" href="https://projecteuler.net/">Project Euler</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/RSWR.png)">
+                  <div class="projectBox">
+                    <h1>RSWR</h1>
+                    <p>
+                      A terrible game written in C++ and X windows for a UI course.
+                    </p>
+                    <div class="btn-group" role="group">
+                      <a class="btn" target="_blank" href="https://github.com/pshendry/RSWR">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id="contact" class="row row-pad container-full2 page" style="height: auto">
             <div class="col-xs-12">
               <h2 style="text-align: center">
@@ -383,6 +479,7 @@
         updateNav("#about");
         updateNav("#education");
         updateNav("#profession");
+        updateNav("#projects");
         updateNav("#contact");
       });
 
@@ -390,6 +487,7 @@
         updateNav("#about");
         updateNav("#education");
         updateNav("#profession");
+        updateNav("#projects");
         updateNav("#contact");
       });
     </script>
