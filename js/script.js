@@ -11,15 +11,17 @@ $(function () {
 
   // Handle filters
   $(".filterable .filter").click(function() {
-    $(".filterable .filter").removeClass("active");
+    var filterParent = $(this).closest(".filterable");
+    var filterItems = filterParent.find(".filter-item");
+    filterParent.find(".filter").removeClass("active");
     var filterVal = $(this).text().toLowerCase().replace(' ','-');
     if (filterVal == "all") {
-      $(this).parents().find(".filterable").find(".filter-item").each(function() {
+      filterItems.each(function() {
         $(this).animate({ opacity: 1 }, 200);
       });
     }
     else {
-      $(this).parents().find(".filterable").find(".filter-item").each(function() {
+      filterItems.each(function() {
         if ($(this).hasClass(filterVal)) {
           $(this).animate({ opacity: 1 }, 200);
         }
