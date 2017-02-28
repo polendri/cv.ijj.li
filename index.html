@@ -1,529 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paul Hendry, Software Developer</title>
-    <meta name="description" content="Paul Hendry is a software developer based in Ontario, Canada.">
-    <meta name="keywords" content="software,programming,development,game,games">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="libs/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
+    <meta name="author" content="Paul Hendry &lt;&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;&gt;">
+    <meta name="description" content="Portfolio for Paul Hendry, a software developer based in Victoria, Canada.">
+    <meta name="keywords" content="hendry,portfolio,software,programming">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link id="fancy-o-meter-css" rel="stylesheet" href="css/fancy0.css">
   </head>
   <body>
-    <div id="wrapper" class="active">
-
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-        <ul id="sidebar_menu" class="sidebar-nav">
-          <li class="sidebar-brand"><a id="menu-toggle" href="#">Paul Hendry<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
-          <li class="side_photo sidebar-brand visible-lg visible-md active">
-            <img alt="photo" class="img-responsive" width="190px" height="122px" src="img/photo-sm.jpg"></img>
-          </li>
-        </ul>
-        <ul id="sidebar" class="sidebar-nav">     
+    <div id="fancy-o-meter-target">
+      <header>
+        <h1>Paul Hendry, Software Developer</h1>
+      </header>
+      <nav>
+        <ul>
           <li>
-            <a id="about-nav" href="#about" title="About Me">
-              About Me<span class="sub_icon glyphicon glyphicon-user"></span>
+            <strong>Navigation</strong>
+          </li>
+          <li>
+            <a href="#section-about">
+              About Me
             </a>
           </li>
           <li>
-            <a id="education-nav" href="#education" title="Education">
-              Education<span class="sub_icon glyphicon glyphicon-book"></span>
+            <a href="#section-education">
+              Education
             </a>
           </li>
           <li>
-            <a id="profession-nav" href="#profession" title="Profession">
-              Profession<span class="sub_icon glyphicon glyphicon-briefcase"></span>
+            <a href="#section-profession">
+              Profession
             </a>
           </li>
           <li>
-            <a id="projects-nav" href="#projects" title="Projects">
-              Projects<span class="sub_icon glyphicon glyphicon-folder-open"></span>
+            <a href="#section-projects">
+              Projects
             </a>
           </li>
           <li>
-            <a id="contact-nav" href="#contact" title="Contact">
-              Contact<span class="sub_icon glyphicon glyphicon-link"></span>
+            <a href="#section-contact">
+              Contact
             </a>
           </li>
         </ul>
-      </div>
-
-      <!-- Page content -->
-      <div id="page-content-wrapper">
-        <!-- Keep all page content within the page-content inset div! -->
-        <div class="page-content inset">
-          <div id="about" class="row row-pad container-full2 page" style="height: auto">
-            <div class="col-lg-6 col-xs-12">
-              <h2 style="text-align: center">
-                About Me
-              </h2>
-              <hr></hr>
-              <p>
-                Hi, I'm Paul, and I'm a programmer, a video game fan, a on-again off-again runner, an amateur digital artist,
-                an occasional outdoorsman, and a mathematics enthusiast based in Kitchener, Ontario, Canada.
-              </p>
-              <p>
-                I completed my Bachelor of Mathematics at the University of Waterloo in 2013, and
-                since then I've been worked as a software developer at <a href="http://www.magnetforensics.com" target="_blank">Magnet Forensics</a>
-                and <a href="http://www.tesera.com" target="_blank">Tesera Systems</a>.
-              </p>
-              <p>
-                When I'm not at work building digital forensics software in C#, I'm typically hacking
-                away at <a href="#projects">my personal coding projects</a>, visiting friends and
-                family, tinkering with my bicycle or my guitar, going out for walks, or just settling
-                down with a video game or some Netflix.
-              </p>
-            </div>
-            <div id="skillset-section" class="col-lg-6 col-xs-12">
-              <h2 style="text-align: center">
-                My Professional Skillset
-              </h2>
-              <hr></hr>
-              <div class="filterable">
-                <div class="filter-group btn-group" role="group">
-                  <button type="button" class="filter btn btn-sm gray">All</button>
-                  <button type="button" class="filter btn btn-sm green">Programming</button>
-                  <button type="button" class="filter btn btn-sm blue">Tool</button>
-                  <button type="button" class="filter btn btn-sm orange">Language</button>
-                  <button type="button" class="filter btn btn-sm purple">Favourites</button>
-                </div>
-                <table id="skillset-table" class="table table-bordered">
-                  <tr>
-                    <td></td>
-                    <th>Expert</th>
-                    <th>Intermediate</th>
-                    <th>Novice</th>
-                  </tr>
-                  <tr>
-                    <th>Razor Sharp</td>
-                    <td>
-                      <a class="filter-item btn btn-sm green programming favourites"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've been working with C# day-to-day for nearly three years, and it's my favourite language for getting things done.">
-                        C#
-                      </a>
-                      <a class="filter-item btn btn-sm blue tool"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="It's massive, it can be slow, but it's a great tool, and I used it daily at Magnet Forensics.">
-                        Visual Studio
-                      </a>
-                      <a class="filter-item btn btn-sm blue tool"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
-                        Git
-                      </a>
-                      <a class="filter-item btn btn-sm orange language"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="Excellent communication and documentation are as important to me as code.">
-                        English
-                      </a>
-                    </td>
-                    <td>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I'm comfortable with full stack web development in Javascript.">
-                        JavaScript
-                      </a>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've used React, Redux, and Node.js for full-stack web development.">
-                        Web Dev
-                      </a>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="Mobile digital forensics means hacking together a lot of SQLite queries.">
-                        SQL
-                      </a>
-                      <a class="filter-item btn btn-sm blue tool favourites"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="My Thinkpad runs Ubuntu, my server runs NixOS, and I've been fiddling with Linux distros since I was a teenager.">
-                        Linux
-                      </a>
-                      <a class="filter-item btn btn-sm blue tool tool"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I'm familiar with making good use of JIRA to organize and analyze Scrum and Kanban projects.">
-                        JIRA
-                      </a>
-                    </td>
-                    <td>
-                      <a class="filter-item btn btn-sm green programming favourites"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
-                        Rust
-                      </a>
-                      <a class="filter-item btn btn-sm green programming favourites"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've still got lots to learn, but I know some basics about S3 and Lambda.">
-                        AWS
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Simmering</td>
-                    <td></td>
-                    <td>
-                      <a class="filter-item btn btn-sm green programming favourites"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so that I can continue learning it.">
-                        Haskell
-                      </a>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>A Little Rusty</td>
-                    <td>
-                      <a class="filter-item btn btn-sm orange language"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="Ça fait longtemps depuis que j'ai eu la chance de bien pratiquer mon Français, mais mon éducation jusqu'à la 11e année s'est déroulé entièrement en langue Française.">
-                        French
-                      </a>
-                    </td>
-                    <td>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've used Python for academic research, and I've used it with Django at work.">
-                        Python
-                      </a>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
-                        C
-                      </a>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've written a respectable amount of C++, but it's a beast of a language so by no means would I call myself an expert!">
-                        C++
-                      </a>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
-                        Java
-                      </a>
-                    </td>
-                    <td>
-                      <a class="filter-item btn btn-sm green programming"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="I've toyed around with Android before, but mobile development is a pretty deep pool and I haven't taken a proper dive yet.">
-                        Android Dev
-                      </a>
-                      <a class="filter-item btn btn-sm orange language"
-                         href="#"
-                         role="button"
-                         data-toggle="tooltip"
-                         title="Mio Italiano non è bene, ma so i fondimenti.">
-                        Italian
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div id="skillset-hover-hint"><small>Hover over skills for details</small></div>
-            </div>
+      </nav>
+      <main>
+        <section id="section-about">
+          <h2>
+            About Me
+          </h2>
+          <p>
+            Hi, I'm Paul, and I'm a programmer currently based in Victoria,
+            Canada. I'm a generalist with experience in full-stack web development
+            and in building apps for desktop, hybrid mobile, and Android.
+          </p>
+          <p>
+            I completed my Bachelor of Mathematics at the University of Waterloo
+            in 2013, and since then I've developed software for small companies
+            like <a href="https://www.magnetforensics.com">Magnet Forensics</a>,
+            <a href="http://tesera.com">Tesera Systems</a>, and
+            <a href="https://www.telmediq.com">TelmedIQ</a>.
+          </p>
+          <p>
+            When I'm not at work building medical communications software in
+            Django/Angular, I'm typically hacking away at
+            <a href="#section-projects">my personal coding projects</a>, hiking on
+            Vancouver Island, tuning up my commuter bicycle, indulging in a good
+            video game, or getting some quality time in with my wife and friends.
+          </p>
+        </section>
+        <section id="section-skillset">
+          <h2>
+            My Professional Skillset
+          </h2>
+          <table id="skillset-table">
+            <caption>My Professional Skillset</caption>
+            <tr>
+              <td></td>
+              <th scope="col">Expert</th>
+              <th scope="col">Intermediate</th>
+              <th scope="col">Novice</th>
+            </tr>
+            <tr>
+              <th scope="row">Razor Sharp</td>
+              <td>
+                <span title="I've been working with C# day-to-day for nearly three years, and it's my favourite language for getting things done.">
+                  C#
+                </span>
+                <span title="It's massive, it can be slow, but it's a great tool, and I used it daily at Magnet Forensics.">
+                  Visual Studio
+                </span>
+                <span title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
+                  Git
+                </span>
+                <span title="Excellent communication and documentation are as important to me as code.">
+                  English
+                </span>
+              </td>
+              <td>
+                <span title="I'm comfortable with full-stack web development in Javascript.">
+                    JavaScript
+                </span>
+                <span title="I've used React, Redux, and Node.js for full-stack web development.">
+                  Web Dev
+                </span>
+                <span title="Mobile digital forensics means hacking together a lot of SQLite queries.">
+                  SQL
+                </span>
+                <span title="My Thinkpad runs Ubuntu, my server runs NixOS, and I've been fiddling with Linux distros since I was a teenager.">
+                  Linux
+                </span>
+                <span title="I'm familiar with making good use of JIRA to organize and analyze Scrum and Kanban projects.">
+                  JIRA
+                </span>
+              </td>
+              <td>
+                <span title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
+                  Rust
+                </span>
+                <span title="I've still got lots to learn, but I know some basics about S3 and Lambda.">
+                  AWS
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Simmering</td>
+              <td></td>
+              <td>
+                <span title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so that I can continue learning it.">
+                  Haskell
+                </span>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">A Little Rusty</td>
+              <td>
+                <span title="Ça fait longtemps depuis que j'ai eu la chance de bien pratiquer mon Français, mais mon éducation jusqu'à la 11e année s'est déroulé entièrement en langue Française.">
+                  French
+                </span>
+              </td>
+              <td>
+                <span title="I've used Python for academic research, and I've used it with Django at work.">
+                  Python
+                </span>
+                <span title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
+                  C
+                </span>
+                <span title="I've written a respectable amount of C++, but it's a beast of a language so by no means would I call myself an expert!">
+                  C++
+                </span>
+                <span title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
+                  Java
+                </span>
+              </td>
+              <td>
+                <span title="I've toyed around with Android before, but mobile development is a pretty deep pool and I haven't taken a proper dive yet.">
+                  Android Dev
+                </span>
+                <span title="Mio Italiano non è bene, ma so i fondimenti.">
+                  Italian
+                </span>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="section-education">
+          <h2>
+            Education
+          </h2>
+          <div class="employment-item">
+            <span class="employment-year">2009 - 2013</span>
+            <span class="employment-title">
+              <strong>Bachelor of Mathematics</strong>, Joint Honours Computer
+              Science / Combinatorics &amp; Optimization,
+              <a href="http://www.uwaterloo.ca">University of Waterloo</a>
+            </span>
+            <p>
+              At UWaterloo I focused my studies primarily in applied and
+              theoretical computer science, cryptography, pure mathematics, and
+              psychology. I also participated in two 4-month research
+              assistantships (one part-time and one full-time) where I
+              implemented privacy-preserving messaging software.
+            </p>
           </div>
-          <div id="education" class="row row-pad container-full2 page" style="height: auto">
-            <div class="col-xs-12">
-              <h2 style="text-align: center">
-                Education
-              </h2>
-              <hr></hr>
-              <div class="col-xs-12 work-item">
-                <span class="work-year">2009 - 2013</span></br>
-                <span class="work-title"><b>Bachelor of Mathematics</b>, Joint Honours Computer Science / Combinatorics & Optimization, <a href="http://www.uwaterloo.ca">University of Waterloo</a></span></br>
-                <p>At UWaterloo I focused my studies primarily in applied and theoretical computer
-                science, cryptography, pure mathematics, and psychology. I also participated in
-                two 4-month research assistantships (one part-time and one full-time) where I
-                assisted Prof. Ian Goldberg in implementing a privacy-preserving messaging protocol.</p>
-              </div>
-            </div>
+        </section>
+        <section id="section-profession">
+          <h2>
+            Profession
+          </h2>
+          <div class="employment-item">
+            <span class="employment-year">April 2016 – October 2016</span>
+            <span class="employment-title">
+              <strong>Systems Developer</strong>,
+              <a href="http://www.tesera.com">Tesera Systems</a>
+            </span>
+            <p>
+              At Tesera I built skills in front-end web development with React and
+              Redux, and in back-end development with Node. As part of a very
+              small distributed team, I also tackled AWS DevOps, UI/UX design, and
+              product management when the team needed it to meet our goals. I
+              pushed hard to introduce code reviews and unit test coverage to the
+              team's minimal processes, and although buy-in was limited, this
+              nonetheless reduced defects. The highly-dynamic remote workplace and
+              unfamiliar tech stack challenged me to be adaptable and independent,
+              and to focus on strong communication.
+            </p>
           </div>
-          <div id="profession" class="row row-pad container-full2 page" style="height: auto">
-            <div class="col-xs-12">
-              <h2 style="text-align: center">
-                Profession
-              </h2>
-              <hr></hr>
-              <div class="row">
-                <div class="col-lg-6 col-xs-12 work-item">
-                  <span class="work-year">April 2016 - Present</span></br>
-                  <span class="work-title"><b>Systems Developer</b>, <a href="http://www.tesera.com">Tesera Systems</a></span></br>
-                  <p>At Tesera I've been building skills in web front-end development with React and
-                  Redux, and in back-end development with Node. In particular, I've been pushing to
-                  introduce and extend unit testing and code reviews, to keep quality high. As a
-                  programmer in such a small team, I've also been tackling a wide range of additional
-                  responsibilities including DevOps, UI/UX design, and product management. The team is
-                  distributed and very light on meetings and other processes, which means that I depend
-                  on strong self-sufficiency and motivation to seek out where my skills are most valuable.</p>
-                </div>
-                <div class="col-lg-6 col-xs-12 work-item">
-                  <span class="work-year">November 2015 - March 2016</span></br>
-                  <span class="work-title"><b>Software Developer, Internal Tools</b>, <a href="http://www.magnetforensics.com">Magnet Forensics</a></span></br>
-                  <p>After two and a half years on product teams, I transitioned to a newly-formed
-                  Internal Tools role. This role was highly self-driven; I
-                  worked mostly independently on redesigning the licensing system used to protect
-                  the products Magnet distributed, in addition to working with a small team to build testing
-                  automation tools.</p>
-                  <p>Beyond programming, I was highly involved in enabling and participating in
-                  continued learning with my peers at Magnet, and in applying and refining
-                  the Agile processes that my team followed.</p>
-                </div>
-                <div class="col-lg-6 col-xs-12 work-item">
-                  <span class="work-year">May 2013 - November 2015</span></br>
-                  <span class="work-title"><b>Software Developer</b>, <a href="http://www.magnetforensics.com">Magnet Forensics</a></span></br>
-                  <p>I began working at Magnet Forensics shortly before completing my undergraduate degree.
-                  My focus was on developing the Internet Evidence Finder software in C#,
-                  which on top of application programming involved UI design, multithreading,
-                  software architecture design, low-level filesystem and database knowledge, and
-                  thorough quality assurance. I personally spearheaded several large features
-                  and architectural improvements.</p>
-                </div>
-                <div class="col-lg-6 col-xs-12 work-item">
-                  <span class="work-year">May 2012 - August 2012</span></br>
-                  <span class="work-title"><b>Undergraduate Research Assistant</b>, <a href="http://www.uwaterloo.ca">University of Waterloo</a></span></br>
-                  <p>I worked under Professor Ian Goldberg to implement a provably anonymous protocol
-                  for posting messages to Twitter. My tasks involved full implementation of the
-                  protocol in Python, along with participating in the weekly meetings for the
-                  cryptography and security research group (CRYSP). While I decided against pursuing research after
-                  graduation, I found the exposure to academic research extremely valuable, and it
-                  is definitely something I am still considering for the future.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-xs-12 work-item">
-                  <span class="work-year">May 2011 - August 2011</span></br>
-                  <span class="work-title"><b>Software Developer (Co-op)</b>, <a href="http://www.sunlife.ca/">Sun Life Financial</a></span></br>
-                  <p>At Sun Life I was primarily tasked with automating changes to the organization's
-                  core customer database using VBScript. I was also able to develop some bug fixes
-                  in C# for financial applications. My performance was highly regarded by my
-                  coworkers and, despite the relative simplicity of my role, it was a very
-                  educational first experience with professional software development.</p>
-                </div>
-                <div class="col-lg-6 col-xs-12 work-item">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <div class="panel-title">
-                        My Professional Philosophy
+          <div class="employment-item">
+            <span class="employment-year">November 2015 – March 2016</span>
+            <span class="employment-title">
+              <strong>Software Developer, Internal Tools</strong>,
+              <a href="http://www.magnetforensics.com">Magnet Forensics</a>
+            </span>
+            <p>
+              After two and a half years on product teams, I transitioned to a
+              newly-formed Internal Tools role. This role was highly
+              self-driven; I worked mostly independently on redesigning the
+              licensing system used to protect the products Magnet distributed,
+              in addition to working with a small team to build test
+              automation tools.
+            </p>
+            <p>
+              Beyond programming, I was highly involved in enabling and
+              participating in continued learning with my peers at Magnet, and
+              in applying and refining the Agile processes that my team
+              followed.
+            </p>
+          </div>
+          <div class="employment-item">
+            <span class="employment-year">May 2013 – November 2015</span>
+            <span class="employment-title">
+              <strong>Software Developer</strong>,
+              <a href="http://www.magnetforensics.com">Magnet Forensics</a>
+            </span>
+            <p>
+              I began working at Magnet Forensics shortly before completing my
+              undergraduate degree. My focus was on developing the Internet
+              Evidence Finder software in C#, which on top of application
+              programming involved UI design, multithreading, software
+              architecture design, low-level filesystem and database knowledge,
+              and thorough quality assurance. I personally spearheaded several
+              large features and architectural improvements.
+            </p>
+          </div>
+          <div class="employment-item">
+            <span class="employment-year">May 2012 – August 2012</span>
+            <span class="employment-title">
+              <strong>Undergraduate Research Assistant</strong>,
+              <a href="http://www.uwaterloo.ca">University of Waterloo</a>
+            </span>
+            <p>
+              I worked under Professor Ian Goldberg to implement a provably
+              anonymous protocol for posting messages to Twitter. My tasks
+              involved full implementation of the protocol in Python, along with
+              participating in the weekly meetings for the cryptography and
+              security research group (CRYSP). While I decided against pursuing
+              research after graduation, I found the exposure to academic research
+              extremely valuable, and it is definitely something I am still
+              considering for the future.
+            </p>
+          </div>
+          <div class="employment-item">
+            <span class="employment-year">May 2011 – August 2011</span>
+            <span class="employment-title">
+              <strong>Software Developer (Co-op)</strong>,
+              <a href="http://www.sunlife.ca/">Sun Life Financial</a>
+            </span>
+            <p>
+              At Sun Life I was primarily tasked with automating changes to the
+              organization's core customer database using VBScript. I was also
+              able to develop some bug fixes in C# for financial applications. My
+              performance was highly regarded by my coworkers and, despite the
+              relative simplicity of my role, it was a very educational first
+              experience with professional software development.
+            </p>
+          </div>
+        </section>
+        <section id="section-projects">
+          <h2>
+            Projects
+          </h2>
+          <!--
+            <div id="projects" class="row row-pad container-full2 page" style="height: auto">
+              <div class="col-xs-12">
+                <hr></hr>
+                <div id="projectsGrid" class="filterable container-full2">
+                  <div class="filter-group btn-group" role="group">
+                    <button type="button" class="filter btn btn-sm gray">All</button>
+                    <button type="button" class="filter btn btn-sm green">Game</button>
+                    <button type="button" class="filter btn btn-sm blue">Tool</button>
+                    <button type="button" class="filter btn btn-sm orange">Writing</button>
+                    <button type="button" class="filter btn btn-sm purple">Misc</button>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/peasants-vs-sires.png)">
+                    <div class="projectBox">
+                      <h1>Peasants vs Sires</h1>
+                      <p>
+                        A simple two-player tug-of-war game written in JavaScript.
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="http://pshendry.github.io/peasants-vs-sires/">Play</a>
+                        <a class="btn" target="_blank" href="https://github.com/pshendry/peasants-vs-sires">GitHub</a>
                       </div>
                     </div>
-                    <div class="panel-body">
-                      <p>I am passionate about getting things done to a high level of quality; I take pride in having (and
-                      continuing to develop) the skills it takes to find maintainable, performant
-                      and practical solutions to software problems. I work hard, and in return I
-                      expect a high level of trust to be placed in me. I enjoy working with others,
-                      but I work best when I also have a private space in which to spend time.</p>
-                      <p>To me, a software development role is a commitment to being involved not only
-                      in programming, but also in planning, collaboration, and the continous improvement of processes and skills.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item writing" style="background-image: url(img/projects/totm.png)">
+                    <div class="projectBox">
+                      <h1>Technology of the Month</h1>
+                      <p>
+                        A technology tutorial blog, in collaboration with others at Magnet Forensics.
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="http://pshendry.github.io/totm/">Read</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/DevQuest.png)">
+                    <div class="projectBox">
+                      <h1>DevQuest</h1>
+                      <p>
+                        Artwork and (some) coding for a highly unpolished hackathon game at Magnet Forensics in January 2015. Fun times!
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="http://pshendry.github.io/DevQuest/">Play</a>
+                        <a class="btn" target="_blank" href="https://github.com/pshendry/DevQuest">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item tool" style="background-image: url(img/projects/nurep.png)">
+                    <div class="projectBox">
+                      <h1>nurep</h1>
+                      <p>
+                        A basic replay viewer for planets.nu games.
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="https://github.com/pshendry/nurep">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item tool" style="background-image: url(img/projects/dsgen.png)">
+                    <div class="projectBox">
+                      <h1>dsgen</h1>
+                      <p>
+                        A utility for generating randomized card sets for Dominion (the board game).
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="https://github.com/pshendry/dsgen">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item misc" style="background-image: url(https://projecteuler.net/profile/pshendry.png); background-position: center; background-repeat: no-repeat; border: 1px solid grey">
+                    <div class="projectBox">
+                      <h1>Project Euler Solutions</h1>
+                      <p>
+                        Solutions to some of Project Euler's challenging mathematical/programming problems.
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="https://github.com/pshendry/project-euler-solutions">GitHub</a>
+                        <a class="btn" target="_blank" href="https://projecteuler.net/">Project Euler</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/RSWR.png)">
+                    <div class="projectBox">
+                      <h1>RSWR</h1>
+                      <p>
+                        A terrible game written in C++ and X windows for a UI course.
+                      </p>
+                      <div class="btn-group" role="group">
+                        <a class="btn" target="_blank" href="https://github.com/pshendry/RSWR">GitHub</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          -->
+        </section>
+        <section id="section-contact">
+          <h2>
+            Contact
+          </h2>
+          Feel free to contact me via email at <a href="mailto:&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;">&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;</a>,
+          or through one of the following other avenues:
+          <div class="link-group">
+            <a class="btn btn-default" href="https://www.linkedin.com/profile/view?id=350100062">LinkedIn</a>
+            <a class="btn btn-default" href="https://github.com/pshendry">GitHub (@pshendry)</a>
           </div>
-          <div id="projects" class="row row-pad container-full2 page" style="height: auto">
-            <div class="col-xs-12">
-              <h2 style="text-align: center">
-                Projects
-              </h2>
-              <hr></hr>
-              <div id="projectsGrid" class="filterable container-full2">
-                <div class="filter-group btn-group" role="group">
-                  <button type="button" class="filter btn btn-sm gray">All</button>
-                  <button type="button" class="filter btn btn-sm green">Game</button>
-                  <button type="button" class="filter btn btn-sm blue">Tool</button>
-                  <button type="button" class="filter btn btn-sm orange">Writing</button>
-                  <button type="button" class="filter btn btn-sm purple">Misc</button>
-                </div>
-                <br/>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/peasants-vs-sires.png)">
-                  <div class="projectBox">
-                    <h1>Peasants vs Sires</h1>
-                    <p>
-                      A simple two-player tug-of-war game written in JavaScript.
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="http://pshendry.github.io/peasants-vs-sires/">Play</a>
-                      <a class="btn" target="_blank" href="https://github.com/pshendry/peasants-vs-sires">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item writing" style="background-image: url(img/projects/totm.png)">
-                  <div class="projectBox">
-                    <h1>Technology of the Month</h1>
-                    <p>
-                      A technology tutorial blog, in collaboration with others at Magnet Forensics.
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="http://pshendry.github.io/totm/">Read</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/DevQuest.png)">
-                  <div class="projectBox">
-                    <h1>DevQuest</h1>
-                    <p>
-                      Artwork and (some) coding for a highly unpolished hackathon game at Magnet Forensics in January 2015. Fun times!
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="http://pshendry.github.io/DevQuest/">Play</a>
-                      <a class="btn" target="_blank" href="https://github.com/pshendry/DevQuest">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item tool" style="background-image: url(img/projects/nurep.png)">
-                  <div class="projectBox">
-                    <h1>nurep</h1>
-                    <p>
-                      A basic replay viewer for planets.nu games.
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="https://github.com/pshendry/nurep">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item tool" style="background-image: url(img/projects/dsgen.png)">
-                  <div class="projectBox">
-                    <h1>dsgen</h1>
-                    <p>
-                      A utility for generating randomized card sets for Dominion (the board game).
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="https://github.com/pshendry/dsgen">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item misc" style="background-image: url(https://projecteuler.net/profile/pshendry.png); background-position: center; background-repeat: no-repeat; border: 1px solid grey">
-                  <div class="projectBox">
-                    <h1>Project Euler Solutions</h1>
-                    <p>
-                      Solutions to some of Project Euler's challenging mathematical/programming problems.
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="https://github.com/pshendry/project-euler-solutions">GitHub</a>
-                      <a class="btn" target="_blank" href="https://projecteuler.net/">Project Euler</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 project filter-item game" style="background-image: url(img/projects/RSWR.png)">
-                  <div class="projectBox">
-                    <h1>RSWR</h1>
-                    <p>
-                      A terrible game written in C++ and X windows for a UI course.
-                    </p>
-                    <div class="btn-group" role="group">
-                      <a class="btn" target="_blank" href="https://github.com/pshendry/RSWR">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="contact" class="row row-pad container-full2 page" style="height: auto">
-            <div class="col-xs-12">
-              <h2 style="text-align: center">
-                Contact
-              </h2>
-              <hr></hr>
-              <div class="col-xs-12">
-                Feel free to contact me via email at <a href="mailto:&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;">&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;</a>,
-                or through one of the following other avenues:
-                <div class="btn-group" role="group">
-                  <a class="btn btn-default" href="https://www.linkedin.com/profile/view?id=350100062">LinkedIn</a>
-                  <a class="btn btn-default" href="https://github.com/pshendry">GitHub (@pshendry)</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="container-full2">
-          <p>Copyright © Paul Hendry 2014-2015, All Right Reserved.</p>
-        </div>
-      </footer>
+        </section>
+        <footer class="footer">
+          Copyright © Paul Hendry 2014-2015, All Right Reserved.
+        </footer>
+      </main>
     </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="libs/jquery/1.11.1/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-      function updateNav(id) {
-        var navTopPos = $(id).offset().top;
-        var navBottomPos = navTopPos + $(id).height();
-        var windowCenterPos = $(window).scrollTop() + ($(window).innerHeight() / 2.5);
-        if (windowCenterPos >= navTopPos - 20 && windowCenterPos < navBottomPos) {
-          $(id + "-nav").addClass('active_nav');
-        } else {
-          $(id + "-nav").removeClass('active_nav');
-        }
-      }
-
-      $(document).ready(function() {
-        updateNav("#about");
-        updateNav("#education");
-        updateNav("#profession");
-        updateNav("#projects");
-        updateNav("#contact");
-      });
-
-      $(window).on('scroll', function() {
-        updateNav("#about");
-        updateNav("#education");
-        updateNav("#profession");
-        updateNav("#projects");
-        updateNav("#contact");
-      });
-    </script>
+    <div id="fancy-o-meter">
+    </div>
   </body>
 </html>
