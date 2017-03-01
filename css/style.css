@@ -48,6 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+	line-height: 1.4;
 }
 
 body > #fancy-o-meter-target {
@@ -62,4 +63,12 @@ body > #fancy-o-meter {
 
 strong {
 	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 0.0625em solid #000000;
 }

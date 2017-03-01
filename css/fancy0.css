@@ -1,3 +1,8 @@
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -28,8 +33,16 @@ nav li:not(:last-child) {
 }
 
 p {
-  line-height: 1.2;
   margin: 1em 0;
+}
+
+td, th {
+  padding: 0.25em 0.5em;
+}
+
+th {
+  background-color: #eeeeee;
+  vertical-align: middle;
 }
 
 #fancy-o-meter-target > header {
@@ -52,4 +65,70 @@ p {
 #fancy-o-meter-target > :not(nav) {
   margin-left: 12em;
   width: calc(100% - 12em);
+}
+
+#fancy-o-meter-target > footer {
+  font-size: 0.8em;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.no-border {
+  border-style: none;
+}
+
+.skillset-table {
+  margin: 2em auto;
+}
+
+.skillset-table > caption {
+  line-height: 1.2;
+}
+
+.skillset-table > caption::after {
+  content: '\A(hover over a skill for details)';
+  font-size: 0.9em;
+  font-weight: normal;
+  white-space: pre;
+}
+
+.skillset-table .skillset-item {
+  cursor: help;
+  position: relative;
+  text-decoration: underline;
+}
+
+.skillset-table .skillset-item:not(:last-child) {
+  margin-bottom: 0.2em;
+}
+
+.skillset-table .skillset-item:hover::after {
+  background-color: #111111;
+  color: #ffffff;
+  content: attr(data-title);
+  left: 0;
+  line-height: 1.2;
+  padding: 0.5em;
+  position: absolute;
+  top: 1.5em;
+  min-width: 15em;
+  z-index: 1;
+}
+
+.employment-item {
+  margin: 2em 0;
+}
+
+.employment-item > .employment-year {
+  font-weight: bold;
+}
+
+ul.contact-methods-list {
+  list-style: disc;
+  margin: 1em 0;
+  padding-left: 3em;
+}
+
+ul.contact-methods-list > li {
+  display: list-item;
 }
