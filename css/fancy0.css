@@ -178,9 +178,21 @@ th {
   margin-bottom: 0.5em;
 }
 
+.project-item > .project-links {
+  margin-top: 0.5em;
+}
+
 .project-item > .project-links > li {
   display: inline-block;
   margin-right: 1em;
+}
+
+#project-euler-thumbnail {
+  /*
+  The Project Euler badge is 62px tall instead of the 180px of all the other
+  project images, so this vertically centers it with the rest.
+  */
+  margin: 59px 0;
 }
 
 /* */
