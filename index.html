@@ -8,7 +8,12 @@
     <meta name="description" content="CV and portfolio for Paul Hendry, a software developer based in Victoria, Canada.">
     <meta name="keywords" content="hendry,portfolio,software,programming">
     <link rel="stylesheet" href="css/style.css">
-    <link id="fancy-o-meter-css" rel="stylesheet" href="css/fancy0.css">
+    <link id="fancy-o-meter-css" rel="stylesheet" href="css/fancy1.css">
+    <script>
+      function setFancyLevel(fancyLevel) {
+        document.getElementById('fancy-o-meter-css').href = 'css/fancy' + fancyLevel + '.css'
+      }
+    </script>
   </head>
   <body>
     <div id="fancy-o-meter-target">
@@ -16,10 +21,10 @@
         <h1>Paul Hendry, Software Developer</h1>
       </header>
       <nav>
+        <div class="nav-title">
+          Navigation
+        </div>
         <ul>
-          <li>
-            <strong>Navigation</strong>
-          </li>
           <li>
             <a href="#section-about">
               About Me
@@ -461,6 +466,8 @@
       </footer>
     </div>
     <div id="fancy-o-meter">
+      <a href="#" onclick="setFancyLevel('0')">Old School</a>
+      <a href="#" onclick="setFancyLevel('1')">Fixed Width</a>
     </div>
   </body>
 </html>

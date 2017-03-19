@@ -1,0 +1,281 @@
+/* TODO https://coolors.co/d6fff6-231651-4dccbd-2374ab-ff8484 */
+/* Re-establish some default styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.117em;
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+/* */
+
+/* Color scheme */
+
+body {
+  background-color: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #231651;
+}
+
+header {
+  background-color: #231651;
+}
+
+header > h1 {
+  color: #ffffff;
+}
+
+main, footer {
+  background-color: #d6fff6;
+}
+
+nav, .skillset-table th, .project-item {
+  background-color: #4dccbd;
+  border-color: #231651;
+}
+
+nav li {
+  background-color: #2374ab;
+  border-color: #231651;
+}
+
+nav li > a {
+  color: #ffffff;
+}
+
+/* */
+
+/* Main layout */
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+#fancy-o-meter-target {
+  position: relative;
+}
+
+nav > .nav-title {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  left: calc((100% - 980px) / 2);
+  top: 6em;
+  z-index: 2
+}
+
+header {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  height: 6em;
+  left: calc((100% - 980px) / 2);
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 980px;
+  z-index: 2;
+}
+
+main, footer {
+  left: calc(12em + (100% - 980px) / 2);
+  position: absolute;
+}
+
+main {
+  box-sizing: border-box;
+  height: calc(100% - 7.5em);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1.5em;
+  top: 6em;
+  width: calc(980px - 12em);
+}
+
+footer {
+  bottom: 0;
+  height: 1.5em;
+  text-align: center;
+  width: calc(980px - 12em);
+}
+
+@media (max-width: 980px) {
+  nav, header {
+    left: 0;
+  }
+
+  main, footer {
+    left: 12em;
+  }
+}
+
+#section-contact {
+  margin-bottom: 4em;
+}
+
+/* */
+
+/* Navbars */
+
+nav {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 0.125em;
+  height: calc(100% - 6em);
+  width: 12em;
+}
+
+nav li {
+  border-bottom-style: solid;
+  border-width: 0.125em;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+nav li > a {
+  display: block;
+  font-size: 1.3em;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* */
+
+/* Skillset table */
+
+.no-border {
+  border-style: none;
+}
+
+.skillset-table {
+  float: right;
+  margin: 0 0 2em 2em;
+}
+
+.skillset-table > caption {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5em; /* Leaves enough room for the ::after hint */
+}
+
+.skillset-table > caption::after {
+  content: '\A(hover over a skill for details)';
+  font-size: 0.9em;
+  font-weight: normal;
+  white-space: pre;
+}
+
+.skillset-table th, .skillset-table td {
+  border-width: 0.125em;
+  padding: 0.25em 0.5em;
+}
+
+.skillset-table th {
+  vertical-align: middle;
+}
+
+.skillset-table .skillset-item {
+  cursor: help;
+  position: relative;
+  text-decoration: underline;
+}
+
+.skillset-table .skillset-item:not(:last-child) {
+  margin-bottom: 0.2em;
+}
+
+/* Hover text for skillset table items */
+.skillset-table .skillset-item:hover::after {
+  background-color: #111111;
+  color: #ffffff;
+  content: attr(data-title);
+  right: 0;
+  line-height: 1.2;
+  padding: 0.5em;
+  position: absolute;
+  top: 1.5em;
+  min-width: 15em;
+  z-index: 1;
+}
+
+/* */
+
+/* Employment history */
+
+.employment-item {
+  margin: 2em 0;
+}
+
+/* */
+
+/* Project items */
+
+.project-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  align-items: center;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  width: 22.5em;
+}
+
+.project-item > .project-thumbnail {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.project-item > .project-title {
+  margin-bottom: 0.5em;
+}
+
+.project-item > .project-description {
+  padding: 0 1em;
+}
+
+.project-item > .project-links {
+  margin-top: 0.5em;
+}
+
+.project-item > .project-links > li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#project-euler-thumbnail {
+  /*
+  The Project Euler badge is 62px tall instead of the 180px of all the other
+  project images, so this vertically centers it with the rest.
+  */
+  margin: 59px 0;
+}
+
+/* */

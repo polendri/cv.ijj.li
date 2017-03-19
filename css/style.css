@@ -57,8 +57,10 @@ body > #fancy-o-meter-target {
 }
 
 body > #fancy-o-meter {
+	background-color: #ffffff;
   flex: 0 0 auto;
   height: 50px;
+	z-index: 3;
 }
 
 strong {
