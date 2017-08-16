@@ -46,6 +46,10 @@ nav {
   font-weight: bold;
 }
 
+.nav-toggle {
+  display: none;
+}
+
 nav li, .nav-title {
   text-align: center;
   height: 2em;

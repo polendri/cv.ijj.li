@@ -77,7 +77,7 @@ body {
   position: relative;
 }
 
-nav > .nav-title {
+.nav-title, .nav-toggle {
   display: none;
 }
 

@@ -8,7 +8,7 @@
     <meta name="description" content="CV and portfolio for Paul Hendry, a software developer based in Victoria, Canada.">
     <meta name="keywords" content="hendry,portfolio,software,programming">
     <link rel="stylesheet" href="css/style.css">
-    <link id="fancy-o-meter-css" rel="stylesheet" href="css/fancy1.css">
+    <link id="fancy-o-meter-css" rel="stylesheet" href="css/fancy2.css">
     <script>
       function setFancyLevel(fancyLevel) {
         document.getElementById('fancy-o-meter-css').href = 'css/fancy' + fancyLevel + '.css'
@@ -17,457 +17,462 @@
   </head>
   <body>
     <div id="fancy-o-meter-target">
-      <header>
-        <h1>Paul Hendry, Software Developer</h1>
-      </header>
-      <nav>
-        <div class="nav-title">
-          Navigation
-        </div>
-        <ul>
-          <li>
-            <a href="#section-about">
+      <div class="content-wrapper">
+        <header>
+          <h1>Paul Hendry, Software Developer</h1>
+        </header>
+        <input id="nav-toggle1" class="nav-toggle" type="checkbox" />
+        <label for="nav-toggle1">&#9776;</label>
+        <nav>
+          <div class="nav-title">
+            Navigation
+          </div>
+          <ul>
+            <li>
+              <a href="#section-about">
+                About Me
+              </a>
+            </li>
+            <li>
+              <a href="#section-education">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#section-profession">
+                Profession
+              </a>
+            </li>
+            <li>
+              <a href="#section-projects">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#section-contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main>
+          <section id="section-about">
+            <h2>
               About Me
-            </a>
-          </li>
-          <li>
-            <a href="#section-education">
+            </h2>
+            <table class="skillset-table">
+              <caption>My Professional Skillset</caption>
+              <tr>
+                <td class="no-border"></td>
+                <th scope="col">Expert</th>
+                <th scope="col">Intermediate</th>
+                <th scope="col">Novice</th>
+              </tr>
+              <tr>
+                <th scope="row">Razor-sharp</td>
+                <td>
+                  <div class="skillset-item" data-title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
+                    Git
+                  </div>
+                  <div class="skillset-item" data-title="I'm comfortable with ES5, ES6, Node.js, and the massive ecosystem surrounding them.">
+                    JavaScript
+                  </div>
+                  <div class="skillset-item" data-title="Excellent communication and documentation are as important to me as code.">
+                    English
+                  </div>
+                </td>
+                <td>
+                  <div class="skillset-item" data-title="I live and breathe Python at TelmedIQ, and it's my go-to scripting language.">
+                    Python
+                  </div>
+                  <div class="skillset-item" data-title="I spend a lot of time extending a complex Django application at TelmedIQ.">
+                    Django
+                  </div>
+                  <div class="skillset-item" data-title="I've used Vue, React, Redux, Angular 1, Django and Node.js for full-stack web development (not all at once!)">
+                    Webdev
+                  </div>
+                  <div class="skillset-item" data-title="My Thinkpad runs Ubuntu, my server runs NixOS, and I've been fiddling with Linux distros since I was a teenager.">
+                    Linux
+                  </div>
+                  <div class="skillset-item" data-title="I'm familiar with making good use of JIRA to organize and analyze Scrum and Kanban projects.">
+                    JIRA
+                  </div>
+                </td>
+                <td>
+                  <div class="skillset-item" data-title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
+                    Rust
+                  </div>
+                  <div class="skillset-item" data-title="I've still got lots to learn, but I know some basics about S3 and Lambda.">
+                    AWS
+                  </div>
+                  <div class="skillset-item" data-title="I'm new to creating Dockerfiles, but familiar with managing images.">
+                    Docker
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Simmering</td>
+                <td>
+                  <div class="skillset-item" data-title="I've been working with C# day-to-day for nearly three years, and it's my favourite language for getting things done.">
+                    C#
+                  </div>
+                </td>
+                <td>
+                  <div class="skillset-item" data-title="Mobile digital forensics means hacking together a lot of SQLite queries.">
+                    SQL
+                  </div>
+                  <div class="skillset-item" data-title="It's massive, it can be slow, but it's a great tool, and I used it daily at Magnet Forensics.">
+                    Visual Studio
+                  </div>
+                  <div class="skillset-item" data-title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so that I can continue learning it.">
+                    Haskell
+                  </div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">A little rusty</td>
+                <td>
+                  <div class="skillset-item" data-title="Ça fait longtemps depuis que j'ai eu la chance de bien pratiquer mon Français, mais mon éducation jusqu'à la 11e année s'est déroulé entièrement en langue Française.">
+                    French
+                  </div>
+                </td>
+                <td>
+                  <div class="skillset-item" data-title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
+                    C
+                  </div>
+                  <div class="skillset-item" data-title="I've written a respectable amount of C++ throughout my education, but I'm admittedly not up-to-date on modern C++.">
+                    C++
+                  </div>
+                  <div class="skillset-item" data-title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
+                    Java
+                  </div>
+                </td>
+                <td>
+                  <div class="skillset-item" data-title="I've toyed around with Android before, but mobile development is a pretty deep pool and I haven't taken a proper dive yet.">
+                    Android
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <p>
+              Hi, I'm Paul, and I'm a programmer with an attention to detail,
+              currently based in Victoria Canada. I'm a generalist with
+              experience in full-stack web development and in building apps for
+              desktop, hybrid mobile, and Android.
+            </p>
+            <p>
+              I completed my Bachelor of Mathematics at the University of Waterloo
+              in 2013, and since then I've developed software for small companies
+              like <a href="https://www.magnetforensics.com">Magnet Forensics</a>,
+              <a href="http://tesera.com">Tesera Systems</a>, and
+              <a href="https://www.telmediq.com">TelmedIQ</a>.
+            </p>
+            <p>
+              When I'm not at work building medical communications software in
+              Django/Angular, I'm typically hacking away at
+              <a href="#section-projects">my personal coding projects</a>, hiking on
+              Vancouver Island, tuning up my commuter bicycle, indulging in a good
+              video game, or getting some quality time in with my wife and friends.
+            </p>
+          </section>
+          <section id="section-education">
+            <h2>
               Education
-            </a>
-          </li>
-          <li>
-            <a href="#section-profession">
+            </h2>
+            <ul>
+              <li class="employment-item">
+                <div class="employment-title">
+                  <strong>Bachelor of Mathematics</strong>, Joint Honours Computer
+                  Science / Combinatorics &amp; Optimization,
+                  <a href="http://www.uwaterloo.ca">University of Waterloo</a>
+                </div>
+                <div class="employment-period">2009 – 2013</div>
+                <p>
+                  At UWaterloo I focused my studies primarily in applied and
+                  theoretical computer science, cryptography, pure mathematics, and
+                  psychology. I also participated in two 4-month research
+                  assistantships (one part-time and one full-time) where I
+                  implemented privacy-preserving messaging software.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="section-profession">
+            <h2>
               Profession
-            </a>
-          </li>
-          <li>
-            <a href="#section-projects">
+            </h2>
+            <ul>
+              <li class="employment-item">
+                <div class="employment-title">
+                  <strong>Software Developer</strong>,
+                  <a href="https://www.telmediq.com">TelmedIQ</a>
+                </div>
+                <div class="employment-period">November 2016 – Present</div>
+                <p>
+                  Currently I'm helping TelmedIQ face the challenges of building a
+                  stable foundation out of its fast-moving startup roots. I've
+                  organized sprint retrospectives and helped coach the team on
+                  Agile processes, which has been providing concrete data to make
+                  our team better. On the programming side, I've been doing a lot
+                  of Django development, with a little frontend work in Angular 1.
+                </p>
+              </li>
+              <li class="employment-item">
+                <div class="employment-title">
+                  <strong>Systems Developer</strong>,
+                  <a href="http://www.tesera.com">Tesera Systems</a>
+                </div>
+                <div class="employment-period">April 2016 – October 2016</div>
+                <p>
+                  At Tesera I built skills in front-end web development with React and
+                  Redux, and in back-end development with Node. As part of a very
+                  small distributed team, I also tackled AWS DevOps, UI/UX design, and
+                  product management when the team needed it to meet our goals. I
+                  pushed hard to introduce code reviews and unit test coverage to the
+                  team's lightweight processes, reducing the rate of defects. The
+                  highly-dynamic remote workplace and unfamiliar tech stack
+                  challenged me to be adaptable and independent, and to focus on
+                  strong communication.
+                </p>
+              </li>
+              <li class="employment-item">
+                <div class="employment-title">
+                  <strong>Software Developer, Internal Tools</strong>,
+                  <a href="http://www.magnetforensics.com">Magnet Forensics</a>
+                </div>
+                <div class="employment-period">November 2015 – March 2016</div>
+                <p>
+                  After two and a half years on product teams, I transitioned to a
+                  newly-formed Internal Tools role. This role was very
+                  self-driven; I worked mostly independently on redesigning the
+                  licensing system used to protect the products Magnet distributed,
+                  in addition to working with a small team to build test
+                  automation tools.
+                </p>
+                <p>
+                  Beyond programming, I was highly involved in enabling and
+                  participating in continued learning with my peers at Magnet, and
+                  in applying and refining the Agile processes that my team
+                  followed.
+                </p>
+              </li>
+              <li class="employment-item">
+                <div class="employment-title">
+                  <strong>Software Developer</strong>,
+                  <a href="http://www.magnetforensics.com">Magnet Forensics</a>
+                </div>
+                <div class="employment-period">May 2013 – November 2015</div>
+                <p>
+                  I began working at Magnet Forensics shortly before completing my
+                  undergraduate degree. My focus was on developing the Internet
+                  Evidence Finder software in C#, which on top of application
+                  programming involved UI design, multithreading, software
+                  architecture design, low-level filesystem and database knowledge,
+                  and thorough quality assurance. I personally spearheaded several
+                  large features and architectural improvements.
+                </p>
+              </li>
+              <li class="employment-item">
+                <div class="employment-title">
+                  <strong>Undergraduate Research Assistant</strong>,
+                  <a href="http://www.uwaterloo.ca">University of Waterloo</a>
+                </div>
+                <div class="employment-period">May 2012 – August 2012</div>
+                <p>
+                  I worked under Professor Ian Goldberg to implement a provably
+                  anonymous protocol for posting messages to Twitter. My tasks
+                  involved full implementation of the protocol in Python, along with
+                  participating in the weekly meetings for the cryptography and
+                  security research group (CRYSP). While I decided against pursuing
+                  research after graduation, I found the exposure to academic research
+                  extremely valuable, and it is definitely something I am still
+                  considering for the future.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="section-projects">
+            <h2>
               Projects
-            </a>
-          </li>
-          <li>
-            <a href="#section-contact">
+            </h2>
+            <p>
+              I love having a side project on the go; sometimes it's for learning,
+              sometimes it's for a challenge, and sometimes it's just for
+              expression. Here's a showcase of things I've been up to:
+            </p>
+            <ul class="project-group">
+              <li class="project-item">
+                <img class="project-thumbnail" src="http://www.placecage.com/360/180"/>
+                <h3 class="project-title">
+                  pshendry.github.io
+                </h3>
+                <div class="project-description">
+                  This website is a hand-crafted, artisanal work of pure HTML and
+                  CSS, 100% JavaScript-free (excluding the theme changer).
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="https://github.com/pshendry/pshendry.github.io" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="project-item">
+                <img class="project-thumbnail" src="img/projects/medicalunitconverter.png"/>
+                <h3 class="project-title">
+                  Medical Unit Converter
+                </h3>
+                <div class="project-description">
+                  A web+mobile tool for doctors, nurses, and students to convert
+                  lab results and common medical units. Built with PhoneGap,
+                  Vue.js and Framework7.
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="https://medicalunitconverter.com" target="_blank">
+                      Web App
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.indeliblesoftware.muc" target="_blank">
+                      Android App
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="project-item">
+                <img class="project-thumbnail" src="img/projects/peasants_vs_sires.png"/>
+                <h3 class="project-title">
+                  Peasants vs Sires
+                </h3>
+                <div class="project-description">
+                  A simple two-player tug-of-war game written in JavaScript.
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="http://pshendry.github.io/peasants-vs-sires/" target="_blank">
+                      Play
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/pshendry/peasants-vs-sires" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="project-item">
+                <img class="project-thumbnail" src="img/projects/dev_quest.png"/>
+                <h3 class="project-title">
+                  DevQuest
+                </h3>
+                <div class="project-description">
+                  Artwork and (some) coding for a hackathon game at Magnet
+                  Forensics in January 2015.
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="http://pshendry.github.io/DevQuest/" target="_blank">
+                      Play
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/pshendry/DevQuest" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="project-item">
+                <img class="project-thumbnail" src="img/projects/nurep.png"/>
+                <h3 class="project-title">
+                  nurep
+                </h3>
+                <div class="project-description">
+                  A basic replay viewer for planets.nu games.
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="http://github.com/pshendry/nurep" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="project-item">
+                <img class="project-thumbnail" src="img/projects/dsgen.png"/>
+                <h3 class="project-title">
+                  dsgen
+                </h3>
+                <div class="project-description">
+                  A utility for generating randomized card sets for the Dominion
+                  board game.
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="http://github.com/pshendry/dsgen" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="project-item">
+                <img id="project-euler-thumbnail" class="project-thumbnail" src="https://projecteuler.net/profile/pshendry.png">
+                <h3 class="project-title">
+                  Project Euler
+                </h3>
+                <div class="project-description">
+                  Solutions to some of Project Euler's challenging mathematics/programming problems.
+                </div>
+                <ul class="project-links">
+                  <li>
+                    <a href="https://github.com/pshendry/project-euler-solutions" target="_blank">
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://projecteuler.net/" target="_blank">
+                      Project Euler
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section id="section-contact">
+            <h2>
               Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <section id="section-about">
-          <h2>
-            About Me
-          </h2>
-          <table class="skillset-table">
-            <caption>My Professional Skillset</caption>
-            <tr>
-              <td class="no-border"></td>
-              <th scope="col">Expert</th>
-              <th scope="col">Intermediate</th>
-              <th scope="col">Novice</th>
-            </tr>
-            <tr>
-              <th scope="row">Razor-sharp</td>
-              <td>
-                <div class="skillset-item" data-title="I use it daily both at work and at home. If someone's messed up their git repo, chances are I can salvage it.">
-                  Git
-                </div>
-                <div class="skillset-item" data-title="I'm comfortable with ES5, ES6, Node.js, and the massive ecosystem surrounding them.">
-                  JavaScript
-                </div>
-                <div class="skillset-item" data-title="Excellent communication and documentation are as important to me as code.">
-                  English
-                </div>
-              </td>
-              <td>
-                <div class="skillset-item" data-title="I live and breathe Python at TelmedIQ, and it's my go-to scripting language.">
-                  Python
-                </div>
-                <div class="skillset-item" data-title="I spend a lot of time extending a complex Django application at TelmedIQ.">
-                  Django
-                </div>
-                <div class="skillset-item" data-title="I've used Vue, React, Redux, Angular 1, Django and Node.js for full-stack web development (not all at once!)">
-                  Webdev
-                </div>
-                <div class="skillset-item" data-title="My Thinkpad runs Ubuntu, my server runs NixOS, and I've been fiddling with Linux distros since I was a teenager.">
-                  Linux
-                </div>
-                <div class="skillset-item" data-title="I'm familiar with making good use of JIRA to organize and analyze Scrum and Kanban projects.">
-                  JIRA
-                </div>
-              </td>
-              <td>
-                <div class="skillset-item" data-title="I've only just sunk my teeth into Rust, but I'm loving it, so I will be back!">
-                  Rust
-                </div>
-                <div class="skillset-item" data-title="I've still got lots to learn, but I know some basics about S3 and Lambda.">
-                  AWS
-                </div>
-                <div class="skillset-item" data-title="I'm new to creating Dockerfiles, but familiar with managing images.">
-                  Docker
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Simmering</td>
-              <td>
-                <div class="skillset-item" data-title="I've been working with C# day-to-day for nearly three years, and it's my favourite language for getting things done.">
-                  C#
-                </div>
-              </td>
-              <td>
-                <div class="skillset-item" data-title="Mobile digital forensics means hacking together a lot of SQLite queries.">
-                  SQL
-                </div>
-                <div class="skillset-item" data-title="It's massive, it can be slow, but it's a great tool, and I used it daily at Magnet Forensics.">
-                  Visual Studio
-                </div>
-                <div class="skillset-item" data-title="The language that excites me the most of all; I find excuses to involve it in my hobby projects so that I can continue learning it.">
-                  Haskell
-                </div>
-              </td>
-              <td>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">A little rusty</td>
-              <td>
-                <div class="skillset-item" data-title="Ça fait longtemps depuis que j'ai eu la chance de bien pratiquer mon Français, mais mon éducation jusqu'à la 11e année s'est déroulé entièrement en langue Française.">
-                  French
-                </div>
-              </td>
-              <td>
-                <div class="skillset-item" data-title="Raw pointers? No problem. Give me a C book and a couple days to brush up.">
-                  C
-                </div>
-                <div class="skillset-item" data-title="I've written a respectable amount of C++ throughout my education, but I'm admittedly not up-to-date on modern C++.">
-                  C++
-                </div>
-                <div class="skillset-item" data-title="I admit it's not my favourite language, but the infrastructure is great. I've used it in school and for Android development.">
-                  Java
-                </div>
-              </td>
-              <td>
-                <div class="skillset-item" data-title="I've toyed around with Android before, but mobile development is a pretty deep pool and I haven't taken a proper dive yet.">
-                  Android
-                </div>
-              </td>
-            </tr>
-          </table>
-          <p>
-            Hi, I'm Paul, and I'm a programmer with an attention to detail,
-            currently based in Victoria Canada. I'm a generalist with
-            experience in full-stack web development and in building apps for
-            desktop, hybrid mobile, and Android.
-          </p>
-          <p>
-            I completed my Bachelor of Mathematics at the University of Waterloo
-            in 2013, and since then I've developed software for small companies
-            like <a href="https://www.magnetforensics.com">Magnet Forensics</a>,
-            <a href="http://tesera.com">Tesera Systems</a>, and
-            <a href="https://www.telmediq.com">TelmedIQ</a>.
-          </p>
-          <p>
-            When I'm not at work building medical communications software in
-            Django/Angular, I'm typically hacking away at
-            <a href="#section-projects">my personal coding projects</a>, hiking on
-            Vancouver Island, tuning up my commuter bicycle, indulging in a good
-            video game, or getting some quality time in with my wife and friends.
-          </p>
-        </section>
-        <section id="section-education">
-          <h2>
-            Education
-          </h2>
-          <ul>
-            <li class="employment-item">
-              <div class="employment-title">
-                <strong>Bachelor of Mathematics</strong>, Joint Honours Computer
-                Science / Combinatorics &amp; Optimization,
-                <a href="http://www.uwaterloo.ca">University of Waterloo</a>
-              </div>
-              <div class="employment-period">2009 – 2013</div>
-              <p>
-                At UWaterloo I focused my studies primarily in applied and
-                theoretical computer science, cryptography, pure mathematics, and
-                psychology. I also participated in two 4-month research
-                assistantships (one part-time and one full-time) where I
-                implemented privacy-preserving messaging software.
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section id="section-profession">
-          <h2>
-            Profession
-          </h2>
-          <ul>
-            <li class="employment-item">
-              <div class="employment-title">
-                <strong>Software Developer</strong>,
-                <a href="https://www.telmediq.com">TelmedIQ</a>
-              </div>
-              <div class="employment-period">November 2016 – Present</div>
-              <p>
-                Currently I'm helping TelmedIQ face the challenges of building a
-                stable foundation out of its fast-moving startup roots. I've
-                organized sprint retrospectives and helped coach the team on
-                Agile processes, which has been providing concrete data to make
-                our team better. On the programming side, I've been doing a lot
-                of Django development, with a little frontend work in Angular 1.
-              </p>
-            </li>
-            <li class="employment-item">
-              <div class="employment-title">
-                <strong>Systems Developer</strong>,
-                <a href="http://www.tesera.com">Tesera Systems</a>
-              </div>
-              <div class="employment-period">April 2016 – October 2016</div>
-              <p>
-                At Tesera I built skills in front-end web development with React and
-                Redux, and in back-end development with Node. As part of a very
-                small distributed team, I also tackled AWS DevOps, UI/UX design, and
-                product management when the team needed it to meet our goals. I
-                pushed hard to introduce code reviews and unit test coverage to the
-                team's lightweight processes, reducing the rate of defects. The
-                highly-dynamic remote workplace and unfamiliar tech stack
-                challenged me to be adaptable and independent, and to focus on
-                strong communication.
-              </p>
-            </li>
-            <li class="employment-item">
-              <div class="employment-title">
-                <strong>Software Developer, Internal Tools</strong>,
-                <a href="http://www.magnetforensics.com">Magnet Forensics</a>
-              </div>
-              <div class="employment-period">November 2015 – March 2016</div>
-              <p>
-                After two and a half years on product teams, I transitioned to a
-                newly-formed Internal Tools role. This role was very
-                self-driven; I worked mostly independently on redesigning the
-                licensing system used to protect the products Magnet distributed,
-                in addition to working with a small team to build test
-                automation tools.
-              </p>
-              <p>
-                Beyond programming, I was highly involved in enabling and
-                participating in continued learning with my peers at Magnet, and
-                in applying and refining the Agile processes that my team
-                followed.
-              </p>
-            </li>
-            <li class="employment-item">
-              <div class="employment-title">
-                <strong>Software Developer</strong>,
-                <a href="http://www.magnetforensics.com">Magnet Forensics</a>
-              </div>
-              <div class="employment-period">May 2013 – November 2015</div>
-              <p>
-                I began working at Magnet Forensics shortly before completing my
-                undergraduate degree. My focus was on developing the Internet
-                Evidence Finder software in C#, which on top of application
-                programming involved UI design, multithreading, software
-                architecture design, low-level filesystem and database knowledge,
-                and thorough quality assurance. I personally spearheaded several
-                large features and architectural improvements.
-              </p>
-            </li>
-            <li class="employment-item">
-              <div class="employment-title">
-                <strong>Undergraduate Research Assistant</strong>,
-                <a href="http://www.uwaterloo.ca">University of Waterloo</a>
-              </div>
-              <div class="employment-period">May 2012 – August 2012</div>
-              <p>
-                I worked under Professor Ian Goldberg to implement a provably
-                anonymous protocol for posting messages to Twitter. My tasks
-                involved full implementation of the protocol in Python, along with
-                participating in the weekly meetings for the cryptography and
-                security research group (CRYSP). While I decided against pursuing
-                research after graduation, I found the exposure to academic research
-                extremely valuable, and it is definitely something I am still
-                considering for the future.
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section id="section-projects">
-          <h2>
-            Projects
-          </h2>
-          <p>
-            I love having a side project on the go; sometimes it's for learning,
-            sometimes it's for a challenge, and sometimes it's just for
-            expression. Here's a showcase of things I've been up to:
-          </p>
-          <ul class="project-group">
-            <li class="project-item">
-              <img class="project-thumbnail" src="http://www.placecage.com/360/180"/>
-              <h3 class="project-title">
-                pshendry.github.io
-              </h3>
-              <div class="project-description">
-                This website is a hand-crafted, artisanal work of pure HTML and
-                CSS, 100% JavaScript-free (excluding the theme changer).
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="https://github.com/pshendry/pshendry.github.io" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="project-item">
-              <img class="project-thumbnail" src="img/projects/medicalunitconverter.png"/>
-              <h3 class="project-title">
-                Medical Unit Converter
-              </h3>
-              <div class="project-description">
-                A web+mobile tool for doctors, nurses, and students to convert
-                lab results and common medical units. Built with PhoneGap,
-                Vue.js and Framework7.
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="https://medicalunitconverter.com" target="_blank">
-                    Web App
-                  </a>
-                </li>
-                <li>
-                  <a href="https://play.google.com/store/apps/details?id=com.indeliblesoftware.muc" target="_blank">
-                    Android App
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="project-item">
-              <img class="project-thumbnail" src="img/projects/peasants_vs_sires.png"/>
-              <h3 class="project-title">
-                Peasants vs Sires
-              </h3>
-              <div class="project-description">
-                A simple two-player tug-of-war game written in JavaScript.
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="http://pshendry.github.io/peasants-vs-sires/" target="_blank">
-                    Play
-                  </a>
-                </li>
-                <li>
-                  <a href="http://github.com/pshendry/peasants-vs-sires" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="project-item">
-              <img class="project-thumbnail" src="img/projects/dev_quest.png"/>
-              <h3 class="project-title">
-                DevQuest
-              </h3>
-              <div class="project-description">
-                Artwork and (some) coding for a hackathon game at Magnet
-                Forensics in January 2015.
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="http://pshendry.github.io/DevQuest/" target="_blank">
-                    Play
-                  </a>
-                </li>
-                <li>
-                  <a href="http://github.com/pshendry/DevQuest" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="project-item">
-              <img class="project-thumbnail" src="img/projects/nurep.png"/>
-              <h3 class="project-title">
-                nurep
-              </h3>
-              <div class="project-description">
-                A basic replay viewer for planets.nu games.
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="http://github.com/pshendry/nurep" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="project-item">
-              <img class="project-thumbnail" src="img/projects/dsgen.png"/>
-              <h3 class="project-title">
-                dsgen
-              </h3>
-              <div class="project-description">
-                A utility for generating randomized card sets for the Dominion
-                board game.
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="http://github.com/pshendry/dsgen" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="project-item">
-              <img id="project-euler-thumbnail" class="project-thumbnail" src="https://projecteuler.net/profile/pshendry.png">
-              <h3 class="project-title">
-                Project Euler
-              </h3>
-              <div class="project-description">
-                Solutions to some of Project Euler's challenging mathematics/programming problems.
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a href="https://github.com/pshendry/project-euler-solutions" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a href="https://projecteuler.net/" target="_blank">
-                    Project Euler
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section id="section-contact">
-          <h2>
-            Contact
-          </h2>
-          <p>
-            Feel free to contact me via email at <a href="mailto:&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;">&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;</a>,
-            or through one of the following other avenues:
-          </p>
-          <ul class="contact-methods-list">
-            <li>
-              <a href="https://www.linkedin.com/profile/view?id=350100062" target="_blank">
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/pshendry" target="_blank">
-                GitHub (@pshendry)
-              </a>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer class="footer">
-        © 2014-2017 Paul Hendry
-      </footer>
+            </h2>
+            <p>
+              Feel free to contact me via email at <a href="mailto:&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;">&#112;&#097;&#117;&#108;&#064;&#112;&#115;&#104;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;</a>,
+              or through one of the following other avenues:
+            </p>
+            <ul class="contact-methods-list">
+              <li>
+                <a href="https://www.linkedin.com/profile/view?id=350100062" target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/pshendry" target="_blank">
+                  GitHub (@pshendry)
+                </a>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <footer class="footer">
+          © 2014-2017 Paul Hendry
+        </footer>
+      </div>
     </div>
     <div id="fancy-o-meter">
       <a href="#" onclick="setFancyLevel('0')">Old School</a>
       <a href="#" onclick="setFancyLevel('1')">Fixed Width</a>
+      <a href="#" onclick="setFancyLevel('2')">Bootstrappy</a>
     </div>
   </body>
 </html>
