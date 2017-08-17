@@ -250,12 +250,13 @@ nav li > a {
   flex-direction: column;
   margin-bottom: 1em;
   padding-bottom: 1em;
-  width: 22.5em;
+  width: 22em;
 }
 
 .project-item > .project-thumbnail {
   border-top-left-radius: 0.375em;
   border-top-right-radius: 0.375em;
+  width: 22em;
 }
 
 .project-item > .project-title {
