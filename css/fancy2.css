@@ -320,7 +320,30 @@ template {
   display: none !important;
 }
 
-/* Reboot.css */
+/*  */
+
+
+/* Bootstrap */
+
+h1, h2, h3 {
+  margin: 2rem 0 .5rem 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/*  */
 
 
 /* Top-level elements */
@@ -332,6 +355,8 @@ template {
   line-height: 1.5;
   color: #292b2c;
 }
+
+/*  */
 
 /* Navbar */
 
@@ -345,6 +370,12 @@ header {
   font-size: 1.25rem;
   z-index: 2;
   white-space: nowrap;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 nav {
@@ -424,6 +455,8 @@ nav > ul > li > a:target {
   }
 }
 
+/*  */
+
 
 /* Content */
 
@@ -433,5 +466,103 @@ main {
 
 section {
   padding-top: 3.375rem;
-  margin-top: -3.375rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: -3.375rem auto 0;
+  max-width: 100%;
 }
+
+@media (min-width: 576px) {
+  section {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    width: 1140px;
+  }
+}
+
+table {
+  margin-bottom: 1rem;
+}
+
+table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #eceeef;
+}
+
+table th {
+  background-color: #eceeef;
+  font-weight: bold;
+}
+
+table td, table th {
+  padding: .75rem;
+  border: 1px solid #eceeef;
+}
+
+.no-border {
+  border-style: none;
+}
+
+/*  */
+
+
+/* About Section */
+
+.skillset-table {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.skillset-table caption {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #292b2c;
+  caption-side: top;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .skillset-table {
+    float: right;
+    margin: 0 1rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #section-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #section-about h2 {
+    order: 1;
+  }
+
+  #section-about .skillset-table {
+    align-self: flex-end;
+    order: 3;
+  }
+
+  #section-about p {
+    order: 2;
+  }
+}
+
+/*  */
