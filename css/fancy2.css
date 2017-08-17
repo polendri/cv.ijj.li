@@ -320,6 +320,8 @@ template {
   display: none !important;
 }
 
+/* Reboot.css */
+
 
 /* Top-level elements */
 
@@ -420,4 +422,16 @@ nav > ul > li > a:target {
     flex-direction: row;
     margin-bottom: 0;
   }
+}
+
+
+/* Content */
+
+main {
+  padding-top: 3.375rem;
+}
+
+section {
+  padding-top: 3.375rem;
+  margin-top: -3.375rem;
 }
