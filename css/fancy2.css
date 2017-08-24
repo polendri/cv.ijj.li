@@ -455,6 +455,10 @@ nav > ul > li > a:target {
   }
 }
 
+.nav-portrait {
+  display: none;
+}
+
 /*  */
 
 
@@ -563,6 +567,59 @@ table td, table th {
   #section-about p {
     order: 2;
   }
+}
+
+/*  */
+
+/* Project items */
+
+.project-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  align-items: center;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-width: 0.125em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  width: 22em;
+}
+
+.project-item > .project-thumbnail {
+  border-top-left-radius: 0.375em;
+  border-top-right-radius: 0.375em;
+  width: 22em;
+}
+
+.project-item > .project-title {
+  margin-bottom: 0.5em;
+}
+
+.project-item > .project-description {
+  padding: 0 1em;
+}
+
+.project-item > .project-links {
+  margin-top: 0.5em;
+}
+
+.project-item > .project-links > li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#project-euler-thumbnail {
+  /*
+  The Project Euler badge is 62px tall instead of the 180px of all the other
+  project images, so this vertically centers it with the rest.
+  */
+  margin: 59px 0;
 }
 
 /*  */

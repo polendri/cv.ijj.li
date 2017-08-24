@@ -60,6 +60,10 @@ nav li:not(:last-child), .nav-title {
   border-bottom: 0.0625em solid #000000;
 }
 
+.nav-portrait {
+  display: none;
+}
+
 /* */
 
 /* Tables */

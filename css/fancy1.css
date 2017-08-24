@@ -164,6 +164,15 @@ nav li > a {
   width: 100%;
 }
 
+nav li.nav-portrait {
+  height: 6.75em;
+}
+
+nav li.nav-portrait img {
+  width: 12em;
+  height: 6.75em;
+}
+
 /* */
 
 /* Skillset table */
