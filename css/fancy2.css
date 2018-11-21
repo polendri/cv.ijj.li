@@ -1,6 +1,6 @@
 /* Reboot.css */
 
-html {
+.fancy2 {
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.15;
@@ -10,17 +10,17 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-*,
-*::before,
-*::after {
+.fancy2 *,
+.fancy2 *::before,
+.fancy2 *::after {
   box-sizing: inherit;
 }
 
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+.fancy2 article, .fancy2 aside, .fancy2 dialog, .fancy2 figcaption, .fancy2 figure, .fancy2 footer, .fancy2 header, .fancy2 hgroup, .fancy2 main, .fancy2 nav, .fancy2 section {
   display: block;
 }
 
-body {
+.fancy2 {
   font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -29,163 +29,163 @@ body {
   background-color: #fff;
 }
 
-[tabindex="-1"]:focus {
+.fancy2[tabindex="-1"]:focus {
   outline: none !important;
 }
 
-hr {
+.fancy2 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.fancy2 h1, .fancy2 h2, .fancy2 h3, .fancy2 h4, .fancy2 h5, .fancy2 h6 {
   margin-top: 0;
   margin-bottom: .5rem;
 }
 
-p {
+.fancy2 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-original-title] {
+.fancy2 abbr[title],
+.fancy2 abbr[data-original-title] {
   text-decoration: underline;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
 }
 
-address {
+.fancy2 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
 
-ol,
-ul,
-dl {
+.fancy2 ol,
+.fancy2 ul,
+.fancy2 dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+.fancy2 ol ol,
+.fancy2 ul ul,
+.fancy2 ol ul,
+.fancy2 ul ol {
   margin-bottom: 0;
 }
 
-dt {
+.fancy2 dt {
   font-weight: bold;
 }
 
-dd {
+.fancy2 dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
 
-blockquote {
+.fancy2 blockquote {
   margin: 0 0 1rem;
 }
 
-dfn {
+.fancy2 dfn {
   font-style: italic;
 }
 
-b,
-strong {
+.fancy2 b,
+.fancy2 strong {
   font-weight: bolder;
 }
 
-small {
+.fancy2 small {
   font-size: 80%;
 }
 
-sub,
-sup {
+.fancy2 sub,
+.fancy2 sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
+.fancy2 sub { bottom: -.25em; }
+.fancy2 sup { top: -.5em; }
 
 
-a {
+.fancy2 a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
-a:hover {
+.fancy2 a:hover {
   color: #0069bf;
   text-decoration: underline;
 }
 
-a:not([href]):not([tabindex]) {
+.fancy2 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
 
-a:not([href]):not([tabindex]):hover,
-a:not([href]):not([tabindex]):focus {
+.fancy2 a:not([href]):not([tabindex]):hover,
+.fancy2 a:not([href]):not([tabindex]):focus {
   color: inherit;
   text-decoration: none;
 }
 
-a:not([href]):not([tabindex]):focus {
+.fancy2 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
-pre,
-code,
-kbd,
-samp {
+.fancy2 pre,
+.fancy2 code,
+.fancy2 kbd,
+.fancy2 samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-pre {
+.fancy2 pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
 }
 
-figure {
+.fancy2 figure {
   margin: 0 0 1rem;
 }
 
-img {
+.fancy2 img {
   vertical-align: middle;
   border-style: none;
 }
 
-svg:not(:root) {
+.fancy2 svg:not(:root) {
   overflow: hidden;
 }
 
-a,
-area,
-button,
-[role="button"],
-input,
-label,
-select,
-summary,
-textarea {
+.fancy2 a,
+.fancy2 area,
+.fancy2 button,
+.fancy2 [role="button"],
+.fancy2 input,
+.fancy2 label,
+.fancy2 select,
+.fancy2 summary,
+.fancy2 textarea {
   touch-action: manipulation;
 }
 
-table {
+.fancy2 table {
   border-collapse: collapse;
 }
 
-caption {
+.fancy2 caption {
   padding-top: .75rem;
   padding-bottom: .75rem;
   color: #868e96;
@@ -193,82 +193,82 @@ caption {
   caption-side: bottom;
 }
 
-th {
+.fancy2 th {
   text-align: left;
 }
 
-label {
+.fancy2 label {
   display: inline-block;
   margin-bottom: .5rem;
 }
 
-button:focus {
+.fancy2 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-input,
-button,
-select,
-optgroup,
-textarea {
+.fancy2 input,
+.fancy2 button,
+.fancy2 select,
+.fancy2 optgroup,
+.fancy2 textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-button,
-input {
+.fancy2 button,
+.fancy2 input {
   overflow: visible;
 }
 
-button,
-select {
+.fancy2 button,
+.fancy2 select {
   text-transform: none;
 }
 
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+.fancy2 button,
+.fancy2 [type="button"],
+.fancy2 [type="reset"],
+.fancy2 [type="submit"] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+.fancy2 button::-moz-focus-inner,
+.fancy2 [type="button"]::-moz-focus-inner,
+.fancy2 [type="reset"]::-moz-focus-inner,
+.fancy2 [type="submit"]::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+.fancy2 input[type="radio"],
+.fancy2 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
 
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
+.fancy2 input[type="date"],
+.fancy2 input[type="time"],
+.fancy2 input[type="datetime-local"],
+.fancy2 input[type="month"] {
   -webkit-appearance: listbox;
 }
 
-textarea {
+.fancy2 textarea {
   overflow: auto;
   resize: vertical;
 }
 
-fieldset {
+.fancy2 fieldset {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-legend {
+.fancy2 legend {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -280,43 +280,43 @@ legend {
   white-space: normal;
 }
 
-progress {
+.fancy2 progress {
   vertical-align: baseline;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+.fancy2 [type="number"]::-webkit-inner-spin-button,
+.fancy2 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type="search"] {
+.fancy2 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
 }
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+.fancy2 [type="search"]::-webkit-search-cancel-button,
+.fancy2 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-::-webkit-file-upload-button {
+.fancy2 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
-output {
+.fancy2 output {
   display: inline-block;
 }
 
-summary {
+.fancy2 summary {
   display: list-item;
 }
 
-template {
+.fancy2 template {
   display: none;
 }
 
-[hidden] {
+.fancy2 [hidden] {
   display: none !important;
 }
 
@@ -325,21 +325,21 @@ template {
 
 /* Bootstrap */
 
-h1, h2, h3 {
+.fancy2 h1, .fancy2 h2, .fancy2 h3 {
   margin: 2rem 0 .5rem 0;
   font-weight: 500;
   line-height: 1.1;
 }
 
-h1 {
+.fancy2 h1 {
   font-size: 2.5rem;
 }
 
-h2 {
+.fancy2 h2 {
   font-size: 2rem;
 }
 
-h3 {
+.fancy2 h3 {
   font-size: 1.75rem;
 }
 
@@ -348,7 +348,7 @@ h3 {
 
 /* Top-level elements */
 
-#fancy-o-meter-target {
+.fancy2 #fancy-o-meter-target {
   font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -360,7 +360,7 @@ h3 {
 
 /* Navbar */
 
-header {
+.fancy2 header {
   position: fixed;
   top: 0;
   left: 0;
@@ -372,13 +372,13 @@ header {
   white-space: nowrap;
 }
 
-header h1 {
+.fancy2 header h1 {
   font-size: 1.25rem;
   line-height: inherit;
   margin: 0;
 }
 
-nav {
+.fancy2 nav {
   background-color: #292b2c;
   position: fixed;
   top: 0;
@@ -390,16 +390,16 @@ nav {
   transition: height .35s ease;
 }
 
-.nav-title {
+.fancy2 .nav-title {
   display: none;
 }
 
-.nav-toggle {
+.fancy2 .nav-toggle {
   position: absolute;
   left: -999px;
 }
 
-.nav-toggle + label {
+.fancy2 .nav-toggle + label {
   display: block;
   background-color: transparent;
   color: rgba(255, 255, 255, .5);
@@ -414,39 +414,39 @@ nav {
   z-index: 3;
 }
 
-nav > ul {
+.fancy2 nav > ul {
   position: relative;
   margin-top: 2.375rem;
   margin-bottom: 0;
   left: -20rem;
 }
 
-.nav-toggle:checked ~ nav {
+.fancy2 .nav-toggle:checked ~ nav {
   height: 15.875rem;
   transition: height .35s ease;
 }
 
-nav > ul > li > a {
+.fancy2 nav > ul > li > a {
   color: rgba(255, 255, 255, .5);
   display: block;
   padding: .5em 1em;
 }
 
-nav > ul > li > a:hover {
+.fancy2 nav > ul > li > a:hover {
   color: rgba(255, 255, 255, .75);
   text-decoration: none;
 }
 
-nav > ul > li > a:target {
+.fancy2 nav > ul > li > a:target {
   color: #fff;
 }
 
 @media (min-width: 992px) {
-  .nav-toggle + label {
+  .fancy2 .nav-toggle + label {
     display: none;
   }
-  
-  nav > ul {
+
+  .fancy2 nav > ul {
     display: flex;
     position: static;
     margin: 0;
@@ -455,7 +455,7 @@ nav > ul > li > a:target {
   }
 }
 
-.nav-portrait {
+.fancy2 .nav-portrait {
   display: none;
 }
 
@@ -464,11 +464,11 @@ nav > ul > li > a:target {
 
 /* Content */
 
-main {
+.fancy2 main {
   padding-top: 3.375rem;
 }
 
-section {
+.fancy2 section {
   padding-top: 3.375rem;
   padding-left: 15px;
   padding-right: 15px;
@@ -477,49 +477,49 @@ section {
 }
 
 @media (min-width: 576px) {
-  section {
+  .fancy2 section {
     width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  section {
+  .fancy2 section {
     width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  section {
+  .fancy2 section {
     width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  section {
+  .fancy2 section {
     width: 1140px;
   }
 }
 
-table {
+.fancy2 table {
   margin-bottom: 1rem;
 }
 
-table thead th {
+.fancy2 table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #eceeef;
 }
 
-table th {
+.fancy2 table th {
   background-color: #eceeef;
   font-weight: bold;
 }
 
-table td, table th {
+.fancy2 table td, .fancy2 table th {
   padding: .75rem;
   border: 1px solid #eceeef;
 }
 
-.no-border {
+.fancy2 .no-border {
   border-style: none;
 }
 
@@ -528,12 +528,12 @@ table td, table th {
 
 /* About Section */
 
-.skillset-table {
+.fancy2 .skillset-table {
   margin: auto;
   margin-bottom: 2rem;
 }
 
-.skillset-table caption {
+.fancy2 .skillset-table caption {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.1;
@@ -543,28 +543,28 @@ table td, table th {
 }
 
 @media (min-width: 992px) {
-  .skillset-table {
+  .fancy2 .skillset-table {
     float: right;
     margin: 0 1rem 2rem 2rem;
   }
 }
 
 @media (max-width: 992px) {
-  #section-about {
+  .fancy2 #section-about {
     display: flex;
     flex-direction: column;
   }
 
-  #section-about h2 {
+  .fancy2 #section-about h2 {
     order: 1;
   }
 
-  #section-about .skillset-table {
+  .fancy2 #section-about .skillset-table {
     align-self: flex-end;
     order: 3;
   }
 
-  #section-about p {
+  .fancy2 #section-about p {
     order: 2;
   }
 }
@@ -573,13 +573,13 @@ table td, table th {
 
 /* Project items */
 
-.project-group {
+.fancy2 .project-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.project-item {
+.fancy2 .project-item {
   align-items: center;
   border-radius: 0.5em;
   border-style: solid;
@@ -591,30 +591,30 @@ table td, table th {
   width: 22em;
 }
 
-.project-item > .project-thumbnail {
+.fancy2 .project-item > .project-thumbnail {
   border-top-left-radius: 0.375em;
   border-top-right-radius: 0.375em;
   width: 22em;
 }
 
-.project-item > .project-title {
+.fancy2 .project-item > .project-title {
   margin-bottom: 0.5em;
 }
 
-.project-item > .project-description {
+.fancy2 .project-item > .project-description {
   padding: 0 1em;
 }
 
-.project-item > .project-links {
+.fancy2 .project-item > .project-links {
   margin-top: 0.5em;
 }
 
-.project-item > .project-links > li {
+.fancy2 .project-item > .project-links > li {
   display: inline-block;
   margin-right: 1em;
 }
 
-#project-euler-thumbnail {
+.fancy2 #project-euler-thumbnail {
   /*
   The Project Euler badge is 62px tall instead of the 180px of all the other
   project images, so this vertically centers it with the rest.

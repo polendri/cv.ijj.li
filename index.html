@@ -8,14 +8,16 @@
     <meta name="description" content="CV and portfolio for Paul Hendry, Victoria-based software developer">
     <meta name="keywords" content="hendry,portfolio,software,programming">
     <link rel="stylesheet" href="css/style.css">
-    <link id="fancy-o-meter-css" rel="stylesheet" href="css/fancy0.css">
+    <link rel="stylesheet" href="css/fancy0.css">
+    <link rel="stylesheet" href="css/fancy1.css">
+    <link rel="stylesheet" href="css/fancy2.css">
     <script>
       function setFancyLevel(fancyLevel) {
-        document.getElementById('fancy-o-meter-css').href = 'css/fancy' + fancyLevel + '.css'
+        document.body.className = 'fancy' + fancyLevel;
       }
     </script>
   </head>
-  <body>
+  <body class="fancy0">
     <div id="fancy-o-meter-target">
       <header>
         <h1>Paul Hendry, Software Developer</h1>
