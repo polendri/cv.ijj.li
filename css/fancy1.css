@@ -28,15 +28,15 @@
 /* Color scheme */
 
 .fancy1 {
-  background-color: #f8f8f8;
+  background-color: #e0e0e0;
 }
 
 .fancy1 h1, .fancy1 h2, .fancy1 h3, .fancy1 h4, .fancy1 h5, .fancy1 h6 {
-  color: #231651;
+  color: #002f6c;
 }
 
 .fancy1 header {
-  background-color: #231651;
+  background-color: #002f6c;
 }
 
 .fancy1 header > h1 {
@@ -44,17 +44,17 @@
 }
 
 .fancy1 main, .fancy1 footer {
-  background-color: #d6fff6;
+  background-color: #f0f0f0;
 }
 
 .fancy1 nav, .fancy1 .skillset-table th, .fancy1 .project-item {
-  background-color: #4dccbd;
-  border-color: #231651;
+  background-color: #8db3e9;
+  border-color: #002f6c;
 }
 
 .fancy1 nav li {
-  background-color: #2374ab;
-  border-color: #231651;
+  background-color: #01579b;
+  border-color: #002f6c;
 }
 
 .fancy1 nav li > a {
@@ -62,7 +62,7 @@
 }
 
 .fancy1 .project-item {
-  border-color: #231651;
+  border-color: #002f6c;
 }
 
 /* */
@@ -184,6 +184,7 @@
 .fancy1 .skillset-table {
   float: right;
   margin: 0 0 2em 2em;
+  border-collapse: separate;
 }
 
 .fancy1 .skillset-table > caption {
@@ -199,9 +200,31 @@
   white-space: pre;
 }
 
-.fancy1 .skillset-table th, .skillset-table td {
-  border-width: 0.125em;
+.fancy1 .skillset-table th,
+.fancy1 .skillset-table td {
+  border-width: 0 0.125em 0.125em 0;
   padding: 0.25em 0.5em;
+}
+.fancy1 .skillset-table thead th,
+.fancy1 .skillset-table tbody tr:first-child th {
+  border-top-width: 0.125em;
+}
+.fancy1 .skillset-table thead th:first-of-type,
+.fancy1 .skillset-table tbody th {
+  border-left-width: 0.125em;
+}
+.fancy1 .skillset-table thead th:first-of-type,
+.fancy1 .skillset-table tbody tr:first-child th {
+  border-top-left-radius: 0.5em;
+}
+.fancy1 .skillset-table thead th:last-child {
+  border-top-right-radius: 0.5em;
+}
+.fancy1 .skillset-table tbody tr:last-child th {
+  border-bottom-left-radius: 0.5em;
+}
+.fancy1 .skillset-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5em;
 }
 
 .fancy1 .skillset-table th {
@@ -231,6 +254,20 @@
   min-width: 15em;
   z-index: 1;
 }
+
+/* Rounded edges */
+/*
+.fancy1 .skillset-table,
+.fancy1 .skillset-table thead,
+.fancy1 .skillset-table thead tr,
+.fancy1 .skillset-table thead tr th,
+.fancy1 .skillset-table tbody,
+.fancy1 .skillset-table tbody tr,
+.fancy1 .skillset-table tbody tr th,
+.fancy1 .skillset-table tbody tr td {
+  border-radius: 1em;
+}
+*/
 
 /* */
 
