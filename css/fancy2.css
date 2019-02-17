@@ -111,8 +111,8 @@
   vertical-align: baseline;
 }
 
-.fancy2 sub { bottom: -.25em; }
-.fancy2 sup { top: -.5em; }
+.fancy2 sub { bottom: -.25rem; }
+.fancy2 sup { top: -.5rem; }
 
 
 .fancy2 a {
@@ -147,7 +147,7 @@
 .fancy2 kbd,
 .fancy2 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .fancy2 pre {
@@ -309,7 +309,7 @@
 }
 
 .fancy2 summary {
-  display: list-item;
+  display: list-itrem;
 }
 
 .fancy2 template {
@@ -384,7 +384,7 @@
   top: 0;
   right: 0;
   left: 0;
-  padding: .5em 1em .5em 20rem;
+  padding: .5rem 1rem .5rem 20rem;
   height: 3.375rem;
   overflow: hidden;
   transition: height .35s ease;
@@ -429,7 +429,7 @@
 .fancy2 nav > ul > li > a {
   color: rgba(255, 255, 255, .5);
   display: block;
-  padding: .5em 1em;
+  padding: .5em 1rem;
 }
 
 .fancy2 nav > ul > li > a:hover {
@@ -462,18 +462,36 @@
 /*  */
 
 
+/* Footer */
+
+.fancy2 footer {
+  padding: 3rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+/*  */
+
+
 /* Content */
 
+.fancy2 #section-experience,
+.fancy2 #section-showcase,
+.fancy2 footer {
+  background-color: #f7f7f7;
+}
+
 .fancy2 main {
-  padding-top: 3.375rem;
+  padding-top: 5.375rem;
 }
 
 .fancy2 section {
-  padding-top: 3.375rem;
+  clear: both;
   padding-left: 15px;
   padding-right: 15px;
-  margin: -3.375rem auto 0;
+  margin: 0 auto;
   max-width: 100%;
+  overflow: auto;
 }
 
 @media (min-width: 576px) {
@@ -526,11 +544,56 @@
 /*  */
 
 
+/* Skillset Table */
+
+.fancy2 .skillset-table > caption {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem; /* Leaves enough room for the ::after hint */
+}
+
+.fancy2 .skillset-table > caption::after {
+  content: '\A(hover for details)';
+  font-size: 0.9rem;
+  font-weight: normal;
+  white-space: pre;
+}
+
+.fancy2 .skillset-table .skillset-item {
+  cursor: help;
+  position: relative;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+}
+
+.fancy2 .skillset-table .skillset-item:last-child {
+  margin-bottom: 0.5rem;
+}
+
+/* Hover text for skillset table items */
+.fancy2 .skillset-table .skillset-item:hover::after {
+  background-color: #111;
+  border-radius: 0.25rem;
+  color: #fff;
+  content: attr(data-title);
+  right: 0;
+  line-height: 1.2;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1.75rem;
+  width: 16rem;
+  white-space: pre-line;
+  z-index: 1;
+}
+
+/*  */
+
+
 /* About Section */
 
 .fancy2 .skillset-table {
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .fancy2 .skillset-table caption {
@@ -545,7 +608,7 @@
 @media (min-width: 992px) {
   .fancy2 .skillset-table {
     float: right;
-    margin: 0 1rem 2rem 2rem;
+    margin: 0 1rem 3rem 2rem;
   }
 }
 
@@ -581,37 +644,41 @@
 
 .fancy2 .project-item {
   align-items: center;
-  border-radius: 0.5em;
-  border-style: solid;
-  border-width: 0.125em;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.25rem;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  width: 22em;
+  margin: 16px;
+  padding-bottom: 16px;
+  width: 22rem;
 }
 
 .fancy2 .project-item > .project-thumbnail {
-  border-top-left-radius: 0.375em;
-  border-top-right-radius: 0.375em;
-  width: 22em;
+  border-bottom: 1px solid #dfdfdf;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  width: calc(22em - 2px);
 }
 
 .fancy2 .project-item > .project-title {
-  margin-bottom: 0.5em;
+  align-self: flex-start;
+  font-size: 1.25rem;
+  margin: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .fancy2 .project-item > .project-description {
-  padding: 0 1em;
+  padding: 0 1.25rem;
 }
 
 .fancy2 .project-item > .project-links {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
 .fancy2 .project-item > .project-links > li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .fancy2 #project-euler-thumbnail {
