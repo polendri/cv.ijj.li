@@ -194,7 +194,7 @@
 }
 
 .fancy1 .skillset-table > caption::after {
-  content: '\A(hover over a skill for details)';
+  content: '\A(hover for details)';
   font-size: 0.9em;
   font-weight: normal;
   white-space: pre;
@@ -235,23 +235,25 @@
   cursor: help;
   position: relative;
   text-decoration: underline;
+  margin-top: 0.5em;
 }
 
-.fancy1 .skillset-table .skillset-item:not(:last-child) {
-  margin-bottom: 0.2em;
+.fancy1 .skillset-table .skillset-item:last-child {
+  margin-bottom: 0.5em;
 }
 
 /* Hover text for skillset table items */
 .fancy1 .skillset-table .skillset-item:hover::after {
-  background-color: #111111;
-  color: #ffffff;
+  background-color: #111;
+  color: #fff;
   content: attr(data-title);
   right: 0;
   line-height: 1.2;
   padding: 0.5em;
   position: absolute;
-  top: 1.5em;
-  min-width: 15em;
+  top: 1.75em;
+  width: 12em;
+  white-space: pre-line;
   z-index: 1;
 }
 
