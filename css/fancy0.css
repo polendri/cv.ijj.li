@@ -197,12 +197,4 @@
   margin-right: 16px;
 }
 
-.fancy0 #project-euler-thumbnail {
-  /*
-  The Project Euler badge is 60px tall instead of the 180px of all the other
-  project images, so this vertically centers it with the rest.
-  */
-  margin: 60px 0;
-}
-
 /* */
