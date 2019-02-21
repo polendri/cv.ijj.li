@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fancy0.css">
     <link rel="stylesheet" href="css/fancy1.css">
     <link rel="stylesheet" href="css/fancy2.css">
+    <link rel="stylesheet" href="css/fancy3.css">
     <script>
       function setFancyLevel(fancyLevel) {
         document.getElementById('fancy-o-meter-target').className = 'fancy' + fancyLevel;
@@ -18,31 +19,31 @@
     </script>
   </head>
   <body>
-    <div class="fancy0" id="fancy-o-meter-target">
+    <div class="fancy3" id="fancy-o-meter-target">
       <header>
-        <h1>Paul Hendry, Software Developer</h1>
+        <h1>Paul&nbsp;Hendry, Software Developer</h1>
       </header>
-      <input id="nav-toggle" class="nav-toggle" type="checkbox" />
-      <label for="nav-toggle">&#9776;</label>
+      <label id="nav-toggle" for="nav-toggle-input">&#9776;</label>
+      <input id="nav-toggle-input" type="checkbox" />
       <nav>
         <div class="nav-title">Navigation</div>
         <ul>
           <li class="nav-portrait">
             <img src="img/portrait.jpg"/>
           </li>
-          <li>
+          <li class="nav-about">
             <a href="#section-about">Bio</a>
           </li>
-          <li>
+          <li class="nav-education">
             <a href="#section-education">Education</a>
           </li>
-          <li>
+          <li class="nav-experience">
             <a href="#section-experience">Experience</a>
           </li>
-          <li>
+          <li class="nav-showcase">
             <a href="#section-showcase">Showcase</a>
           </li>
-          <li>
+          <li class="nav-contact">
             <a href="#section-contact">Contact</a>
           </li>
         </ul>
@@ -194,7 +195,7 @@
                 features and architectural improvements.
               </p>
               <p>
-                Later on, I transitioned to a newly-formed "Internal Tools Developer" role. It was very self-driven; I
+                Later on, I transitioned to a newly-formed "Internal Tools Developer" role, where I
                 worked independently on redesigning the core product's licensing system, in addition to collaborating
                 with a small team to build test automation tooling.
               </p>
@@ -238,7 +239,7 @@
               </h3>
               <div class="project-description">
                 This CV is hand-crafted artisanal HTML/CSS, 99.9% JavaScript-free and made with
-                careful consideration of responsiveness and accessibility.
+                careful consideration of responsiveness and scaling.
               </div>
               <ul class="project-links">
                 <li>
@@ -372,7 +373,8 @@
       Fancy-o-meter: pick a style! (WIP)
       <a href="#" onclick="setFancyLevel('0')">Old School</a> –
       <a href="#" onclick="setFancyLevel('1')">Fixed-width</a> –
-      <a href="#" onclick="setFancyLevel('2')">Bootstrappy</a>
+      <a href="#" onclick="setFancyLevel('2')">Bootstrappy</a> –
+      <a href="#" onclick="setFancyLevel('3')">Default</a>
     </div>
   </body>
 </html>

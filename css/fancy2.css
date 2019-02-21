@@ -394,12 +394,7 @@
   display: none;
 }
 
-.fancy2 .nav-toggle {
-  position: absolute;
-  left: -999px;
-}
-
-.fancy2 .nav-toggle + label {
+.fancy2 #nav-toggle {
   display: block;
   background-color: transparent;
   color: rgba(255, 255, 255, .5);
@@ -414,6 +409,10 @@
   z-index: 3;
 }
 
+.fancy2 #nav-toggle-input {
+  display: none;
+}
+
 .fancy2 nav > ul {
   position: relative;
   margin-top: 2.375rem;
@@ -421,7 +420,7 @@
   left: -20rem;
 }
 
-.fancy2 .nav-toggle:checked ~ nav {
+.fancy2 #nav-toggle-input:checked + nav {
   height: 15.875rem;
   transition: height .35s ease;
 }
@@ -442,7 +441,7 @@
 }
 
 @media (min-width: 992px) {
-  .fancy2 .nav-toggle + label {
+  .fancy2 #nav-toggle {
     display: none;
   }
 

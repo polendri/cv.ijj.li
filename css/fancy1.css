@@ -71,13 +71,12 @@
 
 .fancy1 {
   font-family: Helvetica, sans-serif;
-}
-
-.fancy1 #fancy-o-meter-target {
   position: relative;
 }
 
-.fancy1 .nav-title, .fancy1 .nav-toggle {
+.fancy1 .nav-title,
+.fancy1 #nav-toggle,
+.fancy1 #nav-toggle-input {
   display: none;
 }
 

@@ -46,7 +46,8 @@
   font-weight: bold;
 }
 
-.fancy0 .nav-toggle {
+.fancy0 #nav-toggle,
+.fancy0 #nav-toggle-input {
   display: none;
 }
 
