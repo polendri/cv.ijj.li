@@ -24,6 +24,9 @@
 }
 
 /* General styles */
+body {
+  line-height: 1.5;
+}
 .fancy3 a {
   color: #dd2c00;
 }
@@ -102,7 +105,7 @@
   width: 216px;
   height: 216px;
   border-radius: 50%;
-  box-shadow: 0 0 16px #000;
+  box-shadow: 0 0 8px #000;
 }
 .fancy3 nav a {
   display: block;
@@ -161,6 +164,91 @@
 .fancy3 main {
   overflow-y: auto;
   padding: 3rem;
+}
+
+/* About section */
+.fancy3 #section-about {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.fancy3 .about-skill-line {
+  margin: 0.5rem 0;
+}
+.fancy3 .about-skill {
+  display: inline-flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Fallback for Edge */
+  justify-content: space-evenly;
+  color: #fff;
+  background-color: #dd2c00;
+  border-radius: .5rem;
+  margin: .25rem;
+  padding: 0 .5rem .5rem .5rem;
+  font-family: "Fira Sans";
+}
+.fancy3 .about-skill * {
+  transition: opacity .2s ease;
+}
+.fancy3 .about-skill:hover * {
+  opacity: 0;
+}
+.fancy3 .about-skill::after {
+  position: absolute;
+  content: "";
+  padding: .5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.fancy3 .about-skill:hover::after {
+  opacity: 1;
+}
+.fancy3 .about-skill > div:first-child {
+  flex: 0 0 100%;
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+.fancy3 .about-skill > img {
+  flex: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1rem;
+}
+.fancy3 #about-skill-webservices {
+  width: 8rem;
+}
+.fancy3 #about-skill-webservices:hover::after {
+  content: ".NET, Django, Node.js";
+}
+.fancy3 #about-skill-webapps {
+  width: 6rem;
+}
+.fancy3 #about-skill-webapps:hover::after {
+  content: "Vue, React, TypeScript, Webpack";
+}
+.fancy3 #about-skill-software {
+  width: 9rem;
+}
+.fancy3 #about-skill-software:hover::after {
+  content: "Rust, Python, .NET, Java";
+}
+.fancy3 #about-skill-devops {
+  width: 5.5rem;
+}
+.fancy3 #about-skill-devops:hover::after {
+  content: "Docker, Linux, AWS, Git";
+}
+.fancy3 #about-skill-databases {
+  width: 6.5rem;
+}
+.fancy3 #about-skill-databases:hover::after {
+  content: "SQL, Postgres, SQLite";
 }
 
 /* Footer */
