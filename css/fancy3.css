@@ -24,7 +24,7 @@
 }
 
 /* General styles */
-body {
+.fancy3#fancy-o-meter-target {
   line-height: 1.5;
 }
 .fancy3 a {
@@ -47,8 +47,8 @@ body {
 .fancy3 {
   display: grid;
   grid: "header toggle main" calc(64px + 6rem)
-        "nav toggle main" auto
-        "footer footer footer" auto
+        "nav toggle main" 1fr
+        "footer toggle main" auto
         / 20rem auto 1fr;
 }
 .fancy3 .nav-title {
@@ -74,6 +74,17 @@ body {
 }
 
 /* Sidebar */
+.fancy3 header,
+.fancy3 nav,
+.fancy3 footer {
+  color: #fff;
+  background-color: #455a64;
+  padding: 0 2rem;
+}
+.fancy3 header,
+.fancy3 nav {
+  font-family: "Fira Sans", sans-serif;
+}
 .fancy3 header {
   padding-top: 2rem;
 }
@@ -82,14 +93,6 @@ body {
   text-align: center;
   text-transform: none;
   text-shadow: 0 0 .5rem #000;
-}
-.fancy3 header,
-.fancy3 nav {
-  color: #fff;
-  background-color: #455a64;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-family: "Fira Sans", sans-serif;
 }
 .fancy3 nav ul {
   display: flex;
@@ -152,6 +155,9 @@ body {
   content: "\e901";
   color: #00c853;
 }
+.fancy3 footer {
+  line-height: 2rem;
+}
 
 /* Sidebar toggle button */
 .fancy3 #nav-toggle,
@@ -163,7 +169,26 @@ body {
 /* Main content */
 .fancy3 main {
   overflow-y: auto;
-  padding: 3rem;
+  background-color: #f6f6f6;
+}
+.fancy3 section {
+  max-width: 48rem;
+  padding: 1.5rem 3rem 0 3rem;
+  background-color: #fff;
+}
+.fancy3 section::after {
+  content: "";
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.fancy3 section:first-child {
+  padding-top: 3rem;
+}
+.fancy3 section > h2 {
+  margin-top: 1rem;
 }
 
 /* About section */
@@ -295,6 +320,15 @@ body {
 }
 .fancy3 .employment-details {
   grid-area: details
+}
+
+/* Showcase section */
+.fancy3 .project-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fancy3 .project-item {
+  box-shadow: 0 0 .25rem #000;
 }
 
 /* Footer */
