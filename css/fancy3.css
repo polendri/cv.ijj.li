@@ -37,7 +37,7 @@ body {
 .fancy3 h2,
 .fancy3 h3 {
   font-family: "Fira Sans", sans-serif;
-  margin: 2rem 0 .5rem 0;
+  margin: 2rem 0 1rem 0;
 }
 .fancy3 h2 {
   font-size: 2rem;
@@ -75,7 +75,7 @@ body {
 
 /* Sidebar */
 .fancy3 header {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 .fancy3 header h1 {
   font-size: 1.75rem;
@@ -87,8 +87,8 @@ body {
 .fancy3 nav {
   color: #fff;
   background-color: #455a64;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-family: "Fira Sans", sans-serif;
 }
 .fancy3 nav ul {
@@ -97,15 +97,15 @@ body {
 }
 .fancy3 nav li:first-child {
   align-self: center;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .fancy3 .nav-portrait img {
   object-fit: cover;
   object-position: 25% center;
-  width: 216px;
-  height: 216px;
+  width: 13.5rem;
+  height: 13.5rem;
   border-radius: 50%;
-  box-shadow: 0 0 8px #000;
+  box-shadow: 0 0 .5rem #000;
 }
 .fancy3 nav a {
   display: block;
@@ -220,35 +220,81 @@ body {
   background-size: contain;
   height: 1rem;
 }
-.fancy3 #about-skill-webservices {
+.fancy3 .about-skill-webservices {
   width: 8rem;
 }
-.fancy3 #about-skill-webservices:hover::after {
+.fancy3 .about-skill-webservices:hover::after {
   content: ".NET, Django, Node.js";
 }
-.fancy3 #about-skill-webapps {
+.fancy3 .about-skill-webapps {
   width: 6rem;
 }
-.fancy3 #about-skill-webapps:hover::after {
+.fancy3 .about-skill-webapps:hover::after {
   content: "Vue, React, TypeScript, Webpack";
 }
-.fancy3 #about-skill-software {
+.fancy3 .about-skill-software {
   width: 9rem;
 }
-.fancy3 #about-skill-software:hover::after {
+.fancy3 .about-skill-software:hover::after {
   content: "Rust, Python, .NET, Java";
 }
-.fancy3 #about-skill-devops {
+.fancy3 .about-skill-devops {
   width: 5.5rem;
 }
-.fancy3 #about-skill-devops:hover::after {
+.fancy3 .about-skill-devops:hover::after {
   content: "Docker, Linux, AWS, Git";
 }
-.fancy3 #about-skill-databases {
+.fancy3 .about-skill-databases {
   width: 6.5rem;
 }
-.fancy3 #about-skill-databases:hover::after {
+.fancy3 .about-skill-databases:hover::after {
   content: "SQL, Postgres, SQLite";
+}
+
+/* Experience/Education sections */
+.fancy3 .employment-item {
+  display: grid;
+  grid: "logo title" auto
+        "logo period" auto
+        "details details" auto
+        / auto 1fr;
+}
+.fancy3 .employment-item + .employment-item {
+  margin-top: 1rem;
+}
+.fancy3 .employment-item::before {
+  grid-area: logo;
+  display: inline-block;
+  content: "";
+  background-size: 3rem 3rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.fancy3 .employment-item-reliable::before {
+  background-image: url("../img/companies/reliable_controls.png");
+}
+.fancy3 .employment-item-telmediq::before {
+  background-image: url("../img/companies/telmediq.png");
+}
+.fancy3 .employment-item-tesera::before {
+  background-image: url("../img/companies/tesera_systems.png");
+}
+.fancy3 .employment-item-magnet::before {
+  background-image: url("../img/companies/magnet_forensics.png");
+}
+.fancy3 .employment-item-uwaterloo::before {
+  background-image: url("../img/companies/university_of_waterloo.png");
+}
+.fancy3 .employment-title {
+  grid-area: title
+}
+.fancy3 .employment-period {
+  grid-area: period
+}
+.fancy3 .employment-details {
+  grid-area: details
 }
 
 /* Footer */
