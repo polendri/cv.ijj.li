@@ -210,7 +210,7 @@
   border-radius: .5rem;
   margin: .25rem;
   padding: 0 .5rem .5rem .5rem;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
 }
 .fancy3 .about-skill * {
   transition: opacity .2s ease;
@@ -326,9 +326,54 @@
 .fancy3 .project-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1rem;
 }
 .fancy3 .project-item {
-  box-shadow: 0 0 .25rem #000;
+  display: flex;
+  flex-direction: column;
+  width: 22.5rem;
+  margin: 1.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+  box-shadow: 0 0 .25rem #ddd;
+}
+.fancy3 .project-item > * {
+  margin: 1rem;
+}
+.fancy3 .project-item .project-thumbnail {
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  width: 22.5rem;
+  margin: 0 0 .1875rem 0; /* Restore 8pt grid */
+}
+.fancy3 .project-item > .project-title {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.fancy3 .project-item > .project-description {
+  flex-grow: 1;
+}
+.fancy3 .project-item .project-links li {
+  display: inline-block;
+}
+.fancy3 .project-item .project-links li:not(:last-child) {
+  margin-right: .5rem;
+}
+.fancy3 .project-item .project-links a {
+  display: block;
+  padding: .5rem 1rem;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #dd2c00;
+  color: #fff;
+  border-radius: .5rem;
+  text-decoration: none;
+  transition: background-color .1s;
+}
+.fancy3 .project-item .project-links a:hover {
+  background-color: #ff6434;
 }
 
 /* Footer */
