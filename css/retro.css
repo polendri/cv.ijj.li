@@ -1,34 +1,34 @@
-.fancy0 {
+.retro {
   /* The floating elements start looking terrible below this width */
   min-width: 48rem;
 }
 
 /* Re-establish some default styles we'd normally be happy to be rid of */
 
-.fancy0 caption {
+.retro caption {
   font-weight: bold;
 }
 
-.fancy0 h1, .fancy0 h2, .fancy0 h3, .fancy0 h4, .fancy0 h5, .fancy0 h6 {
+.retro h1, .retro h2, .retro h3, .retro h4, .retro h5, .retro h6 {
   font-weight: bold;
 }
 
-.fancy0 h1 {
+.retro h1 {
   font-size: 2rem;
   margin: 0.67rem 0;
 }
 
-.fancy0 h2 {
+.retro h2 {
   font-size: 1.5rem;
   margin: 0.83rem 0;
 }
 
-.fancy0 h3 {
+.retro h3 {
   font-size: 1.117rem;
   margin: 1rem 0;
 }
 
-.fancy0 p {
+.retro p {
   margin: 1rem 0;
 }
 
@@ -36,31 +36,31 @@
 
 /* Navbars */
 
-.fancy0 nav {
+.retro nav {
   border: 1px solid #000;
   margin: 32px;
   min-width: 160px;
 }
 
-.fancy0 .nav-title {
+.retro .nav-title {
   font-weight: bold;
 }
 
-.fancy0 #nav-toggle,
-.fancy0 #nav-toggle-input {
+.retro #nav-toggle,
+.retro #nav-toggle-input {
   display: none;
 }
 
-.fancy0 nav li, .fancy0 .nav-title {
+.retro nav li, .retro .nav-title {
   text-align: center;
   padding: 4px 16px;
 }
 
-.fancy0 nav li:not(:last-child), .fancy0 .nav-title {
+.retro nav li:not(:last-child), .retro .nav-title {
   border-bottom: 1px solid #000;
 }
 
-.fancy0 .nav-portrait {
+.retro .nav-portrait {
   display: none;
 }
 
@@ -68,11 +68,11 @@
 
 /* Tables */
 
-.fancy0 td, .fancy0 th {
+.retro td, .retro th {
   padding: 4px 8px;
 }
 
-.fancy0 th {
+.retro th {
   background-color: #eee;
   vertical-align: middle;
 }
@@ -81,25 +81,25 @@
 
 /* Main page layout */
 
-.fancy0 header {
+.retro header {
   margin-left: 14rem; /* Width of navbar and its margins */
 }
 
-.fancy0 nav {
+.retro nav {
   float: left;
   margin-top: 16px;
 }
 
-.fancy0 main {
+.retro main {
   margin: 32px;
 }
 
-.fancy0 .skillset-table {
+.retro .skillset-table {
   float: right;
   margin: 0 0 16px 16px;
 }
 
-.fancy0 footer {
+.retro footer {
   font-size: 0.8rem;
   margin-top: 48px;
   text-align: center;
@@ -110,35 +110,35 @@
 
 /* Skillset table */
 
-.fancy0 .no-border {
+.retro .no-border {
   border-style: none;
 }
 
-.fancy0 .skillset-table > caption {
+.retro .skillset-table > caption {
   line-height: 1.2;
   margin-bottom: 8px; /* Leaves enough room for the ::after hint */
 }
 
-.fancy0 .skillset-table > caption::after {
+.retro .skillset-table > caption::after {
   content: '\A(hover for details)';
   font-size: 0.8rem;
   font-weight: normal;
   white-space: pre;
 }
 
-.fancy0 .skillset-table .skillset-item {
+.retro .skillset-table .skillset-item {
   cursor: help;
   position: relative;
   text-decoration: underline;
   margin-top: 0.5rem;
 }
 
-.fancy0 .skillset-table .skillset-item:last-child {
+.retro .skillset-table .skillset-item:last-child {
   margin-bottom: 0.5rem;
 }
 
 /* Hover text for skillset table items */
-.fancy0 .skillset-table .skillset-item:hover::after {
+.retro .skillset-table .skillset-item:hover::after {
   background-color: #fff;
   color: #111;
   border: 1px solid #000;
@@ -157,7 +157,7 @@
 
 /* Employment history */
 
-.fancy0 .employment-item {
+.retro .employment-item {
   margin: 2rem 0;
 }
 
@@ -165,13 +165,13 @@
 
 /* Project items */
 
-.fancy0 .project-group {
+.retro .project-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.fancy0 .project-item {
+.retro .project-item {
   align-items: center;
   border: 1px solid #000;
   display: flex;
@@ -181,19 +181,19 @@
   width: 360px;
 }
 
-.fancy0 .project-item > .project-thumbnail {
+.retro .project-item > .project-thumbnail {
   border: 1px solid #000;
 }
 
-.fancy0 .project-item > .project-title {
+.retro .project-item > .project-title {
   margin-bottom: 0.5rem;
 }
 
-.fancy0 .project-item > .project-links {
+.retro .project-item > .project-links {
   margin-top: 0.5rem;
 }
 
-.fancy0 .project-item > .project-links > li {
+.retro .project-item > .project-links > li {
   display: inline-block;
   margin-right: 16px;
 }
