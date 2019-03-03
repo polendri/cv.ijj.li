@@ -1,4 +1,11 @@
-/* CSS Reset */
+/**
+ * Guidelines to adhere to in this CSS:
+ *   * Use rems for all length units
+ *   * Align elements on an 8pt grid (https://spec.fm/specifics/8-pt-grid)
+ *   * Use BEM convention for classes/selectors (http://getbem.com/introduction/)
+ */
+
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,19 +54,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/* CSS Reset */
-
-
-/* TODO move/delete */
-strong {
-  font-weight: bold;
-}
-table {
-  border-collapse: collapse;
-}
-td, th {
-  border: 1px solid #000000;
-}
 
 /* Fonts and icons */
 @font-face {
@@ -70,182 +64,269 @@ td, th {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
   font-family: "Icons";
   src: url('../fonts/Icons.woff2?bow09o') format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-.cv#fancy-o-meter-target {
-  font-family: "Open Sans", sans-serif;
-}
 
-/* General styles */
-.cv#fancy-o-meter-target {
+/* Define new default styles for elements */
+body {
+  height: 100vh;
   font-size: 1rem;
   line-height: 1.5rem;
 }
+em {
+  font-style: italic;
+}
+p {
+  margin: 1rem 0;
+}
+strong {
+  font-weight: bold;
+}
+.cv {
+  font-family: Helvetica, Arial, sans-serif;
+}
 .cv a {
   color: #dd2c00;
-}
-.cv p {
-  margin: 1rem 0;
 }
 .cv h1,
 .cv h2,
 .cv h3 {
   font-family: "Fira Sans", sans-serif;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 1.5rem 0;
 }
 .cv h2 {
   font-size: 2rem;
 }
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 /* Page layout */
 .cv {
+  min-width: 22rem;
   display: grid;
-  grid: "header toggle main" calc(64px + 6rem)
-        "nav toggle main" 1fr
-        "footer toggle main" auto
-        / 20rem auto 1fr;
+  grid: "title nav" 4rem
+        "main main" 1fr
+        "footer footer" auto
+        / max-content minmax(0, 1fr);
+  background-color: #f6f6f6;
 }
-.cv .nav-title {
-  display: none;
+.cv .title {
+  grid-area: title;
 }
-.cv header {
-  grid-area: header;
-}
-.cv #nav-toggle {
-  grid-area: toggle;
-}
-.cv #nav-toggle-input {
-  display: none;
-}
-.cv nav {
+.cv .sidebar__nav {
   grid-area: nav;
 }
-.cv main {
+.cv .main {
   grid-area: main;
 }
-.cv footer {
+.cv .footer {
   grid-area: footer;
+}
+@media screen and (min-width: 54rem) {
+  .cv {
+    grid: "title main" auto
+          "nav main" 1fr
+          "footer main" auto
+          / 18rem 1fr;
+  }
+}
+@media screen and (min-width: 74rem) {
+  .cv {
+    grid-template-columns: 22rem 1fr;
+  }
 }
 
 /* Sidebar */
-.cv header,
-.cv nav,
-.cv footer {
+.cv .title,
+.cv .sidebar,
+.cv .footer {
   color: #fff;
-  background-color: #455a64;
-  padding: 0 2rem;
+  /* background-color: #455a64; */
+  /* Pattern by Atle Mo and Sébastien Grosjean
+   * https://leaverou.github.io/css3patterns/#carbon */
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+              linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+              linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+              linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+              linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+              linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+              background-color: #131313;
+              background-size: 20px 20px;
 }
-.cv header,
-.cv nav {
+.cv .title,
+.cv .sidebar {
   font-family: "Fira Sans", sans-serif;
 }
-.cv header {
-  padding-top: 2rem;
-}
-.cv header h1 {
-  font-size: 1.75rem;
-  text-align: center;
-  text-transform: none;
-  text-shadow: 0 0 .5rem #000;
-}
-.cv nav ul {
-  display: flex;
-  flex-direction: column;
-}
-.cv nav li:first-child {
-  align-self: center;
-  margin-bottom: 2rem;
-}
-.cv .nav-portrait img {
-  object-fit: cover;
-  object-position: 25% center;
-  width: 13.5rem;
-  height: 13.5rem;
-  border-radius: 50%;
-  box-shadow: 0 0 .5rem #000;
-}
-.cv nav a {
-  display: block;
-  color: #fff;
+.cv .title .title__heading {
+  margin: 0 0 0 4rem;
+  padding: .75rem .5rem;
   font-size: 1.25rem;
-  line-height: 2;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 0 0 .375rem #000;
-  transition: background-color .1s;
-}
-.cv nav a:hover {
-  background-color: #718792;
-}
-.cv .nav-about a::before,
-.cv .nav-education a::before,
-.cv .nav-experience a::before,
-.cv .nav-showcase a::before,
-.cv .nav-contact a::before {
-  display: inline-block;
-  font-family: "Icons";
-  width: 2.625rem;
-  text-align: center;
-  padding: 0 .5rem;
-  text-shadow: 0 0 .375rem #000;
-}
-.cv .nav-about a::before {
-  content: "\e904";
-  color: #dd2c00;
-}
-.cv .nav-education a::before {
-  content: "\e902";
-  color: #304ffe;
-}
-.cv .nav-experience a::before {
-  content: "\e900";
-  color: #8d6e63;
-}
-.cv .nav-showcase a::before {
-  content: "\e903";
-  color: #ffd600;
-}
-.cv .nav-contact a::before {
-  content: "\e901";
-  color: #00c853;
-}
-.cv footer {
   line-height: 1.5rem;
   text-align: center;
 }
-.cv footer {
-  padding-bottom: .5rem;
+.cv .title .title__heading::after {
+  display: block;
+  content: "Software Developer";
   font-size: .75rem;
+  line-height: 1rem;
 }
-
-/* Sidebar toggle button */
-.cv #nav-toggle,
-.cv #nav-toggle-input {
-  /* TODO */
-  display: none;
+.cv .sidebar {
+  width: 100%;
+}
+.cv .sidebar .sidebar__photo {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  object-position: 25% center;
+  border-radius: 50%;
+}
+.cv .sidebar .sidebar__nav,
+.cv .sidebar .sidebar__nav ul {
+  height: 100%;
+}
+.cv .sidebar__nav .nav__item a {
+  color: #fff;
+}
+.cv .sidebar__nav .nav__item a:hover {
+  background-color: rgba(255, 255, 255, .25);
+}
+.cv .nav ul {
+  display: flex;
+  align-items: center;
+}
+.cv .nav .nav__item {
+  width: 20%;
+}
+.cv .nav .nav__item a {
+  display: block;
+  height: 100%;
+  padding-left: calc(50% - .5rem);
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .1s;
+  color: transparent;
+}
+.cv .nav .nav__item a::before {
+  font-family: "Icons";
+  text-align: center;
+}
+.cv .nav .nav__item_about a::before {
+  content: "\e904";
+  color: #dd2c00;
+}
+.cv .nav .nav__item_education a::before {
+  content: "\e902";
+  color: #304ffe;
+}
+.cv .nav .nav__item_experience a::before {
+  content: "\e900";
+  color: #8d6e63;
+}
+.cv .nav .nav__item_showcase a::before {
+  content: "\e903";
+  color: #ffd600;
+}
+.cv .nav .nav__item_contact a::before {
+  content: "\e901";
+  color: #00c853;
+}
+.cv .footer {
+  font-size: .75rem;
+  line-height: 1rem;
+  text-align: center;
+  padding: .5rem 0;
+}
+@media screen and (min-width: 40rem) {
+  .cv .nav .nav__item {
+    width: 22%;
+  }
+  .cv .nav .nav__item_about {
+    width: 12%;
+  }
+  .cv .nav .nav__item a {
+    color: #fff;
+    line-height: 1.5rem;
+    padding-left: 0;
+  }
+  .cv .nav .nav__item a::before {
+    display: block;
+  }
+}
+@media screen and (min-width: 54rem) {
+  .cv .title .title__heading {
+    margin: 0;
+    padding: 4rem 0 2.5rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .cv .title .title__heading::after {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .cv .sidebar {
+    padding: 0 2.25rem;
+  }
+  .cv .sidebar .sidebar__photo {
+    position: static;
+    margin: auto;
+    width: 13.5rem;
+    height: 13.5rem;
+    box-shadow: 0 0 .5rem #000;
+  }
+  .cv .sidebar .sidebar__nav {
+    padding: 2rem 0 .5rem 0;
+  }
+  .cv .sidebar .sidebar__nav,
+  .cv .sidebar .sidebar__nav ul {
+    height: unset;
+  }
+  .cv .nav ul {
+    flex-direction: column;
+  }
+  .cv .nav .nav__item {
+    width: 100%;
+    max-width: 13.5rem;
+  }
+  .cv .nav .nav__item a {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    text-align: left;
+  }
+  .cv .nav .nav__item a::before {
+    display: inline-block;
+    font-family: "Icons";
+    width: 2.625rem;
+    text-align: center;
+    padding-right: .5rem;
+  }
+  .cv .footer .footer__surprise {
+    display: block;
+  }
 }
 
 /* Main content */
-.cv main {
+.cv .main {
   overflow-y: auto;
-  background-color: #f6f6f6;
 }
-.cv section {
-  max-width: 48rem;
+.cv .main .main__section {
+  max-width: calc(52rem + 4px);
   padding: 1.5rem 3rem 0 3rem;
   background-color: #fff;
 }
-.cv section::after {
+.cv .main .main__section::after {
   content: "";
   display: block;
   width: 80%;
@@ -253,22 +334,22 @@ td, th {
   padding-top: 1.5rem;
   border-bottom: 1px solid #ddd;
 }
-.cv section:first-child {
+.cv .main .main__section:first-child {
   padding-top: 3rem;
 }
-.cv section > h2 {
+.cv .main .main__section > h2 {
   margin-top: 1rem;
 }
 
 /* About section */
-.cv #section-about {
+.cv .section_about {
   font-size: 1.25rem;
   line-height: 2rem;
 }
-.cv .about-skill-line {
+.cv .section_about .about__skill-line {
   margin: 0.5rem 0;
 }
-.cv .about-skill {
+.cv .section_about .about__skill {
   display: inline-flex;
   position: relative;
   flex-wrap: wrap;
@@ -281,13 +362,13 @@ td, th {
   padding: 0 .5rem .5rem .5rem;
   font-family: "Fira Sans", sans-serif;
 }
-.cv .about-skill * {
+.cv .section_about .about__skill * {
   transition: opacity .2s ease;
 }
-.cv .about-skill:hover * {
+.cv .section_about .about__skill:hover * {
   opacity: 0;
 }
-.cv .about-skill::after {
+.cv .section_about .about__skill::after {
   position: absolute;
   content: "";
   padding: .5rem;
@@ -299,49 +380,49 @@ td, th {
   opacity: 0;
   transition: opacity .2s ease;
 }
-.cv .about-skill:hover::after {
+.cv .section_about .about__skill:hover::after {
   opacity: 1;
 }
-.cv .about-skill > div:first-child {
+.cv .section_about .about__skill > div {
   flex: 0 0 100%;
   font-size: 1.25rem;
   margin-bottom: .5rem;
   text-align: center;
 }
-.cv .about-skill > img {
+.cv .section_about .about__skill > img {
   flex: none;
   background-repeat: no-repeat;
   background-size: contain;
   height: 1rem;
 }
-.cv .about-skill-webservices {
+.cv .section_about .about__skill_webservices {
   width: 9rem;
 }
-.cv .about-skill-webservices:hover::after {
+.cv .section_about .about__skill_webservices:hover::after {
   content: ".NET, Django, Node.js";
 }
-.cv .about-skill-webapps {
+.cv .section_about .about__skill_webapps {
   width: 7rem;
 }
-.cv .about-skill-webapps:hover::after {
+.cv .section_about .about__skill_webapps:hover::after {
   content: "Vue, React, TypeScript, Webpack";
 }
-.cv .about-skill-software {
+.cv .section_about .about__skill_software {
   width: 10rem;
 }
-.cv .about-skill-software:hover::after {
+.cv .section_about .about__skill_software:hover::after {
   content: "Rust, Python, .NET, Java";
 }
-.cv .about-skill-devops {
+.cv .section_about .about__skill_devops {
   width: 6.5rem;
 }
-.cv .about-skill-devops:hover::after {
+.cv .section_about .about__skill_devops:hover::after {
   content: "Docker, Linux, AWS, Git";
 }
-.cv .about-skill-databases {
-  width: 6.5rem;
+.cv .section_about .about__skill_databases {
+  width: 7.5rem;
 }
-.cv .about-skill-databases:hover::after {
+.cv .section_about .about__skill_databases:hover::after {
   content: "SQL, Postgres, SQLite";
 }
 
@@ -353,7 +434,7 @@ td, th {
         "details details" auto
         / auto 1fr;
 }
-.cv .employment-item + .employment-item {
+.cv .employment-item:not(:first-child) {
   margin-top: 1rem;
 }
 .cv .employment-item::before {
@@ -366,72 +447,72 @@ td, th {
   height: 3rem;
   margin-right: 1rem;
 }
-.cv .employment-item-reliable::before {
+.cv .employment-item_reliable::before {
   background-image: url("../img/companies/reliable_controls.png");
 }
-.cv .employment-item-telmediq::before {
+.cv .employment-item_telmediq::before {
   background-image: url("../img/companies/telmediq.png");
 }
-.cv .employment-item-tesera::before {
+.cv .employment-item_tesera::before {
   background-image: url("../img/companies/tesera_systems.png");
 }
-.cv .employment-item-magnet::before {
+.cv .employment-item_magnet::before {
   background-image: url("../img/companies/magnet_forensics.png");
 }
-.cv .employment-item-uwaterloo::before {
+.cv .employment-item_uwaterloo::before {
   background-image: url("../img/companies/university_of_waterloo.png");
 }
-.cv .employment-title {
+.cv .employment-item__title {
   grid-area: title
 }
-.cv .employment-period {
+.cv .employment-item__period {
   grid-area: period
 }
-.cv .employment-details {
+.cv .employment-item__details {
   grid-area: details
 }
 
 /* Showcase section */
-.cv .project-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 -1rem;
+.cv .showcase__projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
 }
-.cv .project-item {
+.cv .project {
   display: flex;
   flex-direction: column;
-  width: 22.5rem;
-  margin: 1.5rem 1rem;
+  max-width: calc(22.5rem + 2px);
   border: 1px solid #ddd;
   border-radius: .25rem;
   box-shadow: 0 0 .25rem #ddd;
 }
-.cv .project-item > * {
+.cv .project > * {
   margin: 1rem;
 }
-.cv .project-item .project-thumbnail {
+.cv .project .project__thumbnail {
+  width: 100%;
+  height: auto;
   border-bottom: 1px solid #ddd;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  width: 22.5rem;
-  margin: 0 0 .1875rem 0; /* Restore 8pt grid */
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  margin: 0 0 .1875rem 0;
 }
-.cv .project-item > .project-title {
+.cv .project .project__title {
   font-family: "Fira Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
-.cv .project-item > .project-description {
+.cv .project .project__description {
   flex-grow: 1;
 }
-.cv .project-item .project-links li {
+.cv .project .project__links li {
   display: inline-block;
 }
-.cv .project-item .project-links li:not(:last-child) {
+.cv .project .project__links li:not(:last-child) {
   margin-right: .5rem;
 }
-.cv .project-item .project-links a {
+.cv .project .project__links a {
   display: block;
   padding: .5rem 1rem;
   font-family: "Fira Sans", sans-serif;
@@ -441,6 +522,6 @@ td, th {
   text-decoration: none;
   transition: background-color .1s;
 }
-.cv .project-item .project-links a:hover {
+.cv .project .project__links a:hover {
   background-color: #ff6434;
 }
