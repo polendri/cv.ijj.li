@@ -1,201 +1,132 @@
-.retro {
-  /* The floating elements start looking terrible below this width */
-  min-width: 48rem;
-}
-
 /* Re-establish some default styles we'd normally be happy to be rid of */
-
 .retro caption {
   font-weight: bold;
 }
-
-.retro h1, .retro h2, .retro h3, .retro h4, .retro h5, .retro h6 {
+.retro h1,
+.retro h2,
+.retro h3,
+.retro h4,
+.retro h5,
+.retro h6 {
   font-weight: bold;
 }
-
 .retro h1 {
   font-size: 2rem;
-  margin: 0.67rem 0;
+  line-height: 3rem;
+  margin: 2rem 0 .5rem 0;
 }
-
 .retro h2 {
   font-size: 1.5rem;
-  margin: 0.83rem 0;
+  line-height: 2rem;
+  margin: 1.5rem 0 .5rem 0;
 }
-
 .retro h3 {
-  font-size: 1.117rem;
+  font-size: 1.25rem;
   margin: 1rem 0;
 }
-
 .retro p {
   margin: 1rem 0;
 }
 
-/* */
-
-/* Navbars */
-
-.retro nav {
-  border: 1px solid #000;
-  margin: 32px;
-  min-width: 160px;
+/* Page layout */
+.retro {
+  min-width: 48rem; /* The floating elements start looking terrible below this width */
+  max-width: 58rem;
 }
-
-.retro .nav-title {
-  font-weight: bold;
+.retro .title {
+  margin: 2rem;
 }
-
-.retro #nav-toggle,
-.retro #nav-toggle-input {
-  display: none;
+.retro .title .title__heading::after {
+  content: ", Software Developer";
 }
-
-.retro nav li, .retro .nav-title {
-  text-align: center;
-  padding: 4px 16px;
-}
-
-.retro nav li:not(:last-child), .retro .nav-title {
-  border-bottom: 1px solid #000;
-}
-
-.retro .nav-portrait {
-  display: none;
-}
-
-/* */
-
-/* Tables */
-
-.retro td, .retro th {
-  padding: 4px 8px;
-}
-
-.retro th {
-  background-color: #eee;
-  vertical-align: middle;
-}
-
-/* */
-
-/* Main page layout */
-
-.retro header {
-  margin-left: 14rem; /* Width of navbar and its margins */
-}
-
-.retro nav {
-  float: left;
-  margin-top: 16px;
-}
-
-.retro main {
-  margin: 32px;
-}
-
-.retro .skillset-table {
+.retro .sidebar {
   float: right;
-  margin: 0 0 16px 16px;
 }
-
-.retro footer {
-  font-size: 0.8rem;
-  margin-top: 48px;
+.retro main {
+  margin: 2rem;
+}
+.retro .footer {
+  font-size: 0.75rem;
+  margin-top: 3rem;
   text-align: center;
   width: 100%;
 }
-
-/* */
-
-/* Skillset table */
-
-.retro .no-border {
-  border-style: none;
+.retro .footer .footer__surprise {
+  display: none;
 }
 
-.retro .skillset-table > caption {
-  line-height: 1.2;
-  margin-bottom: 8px; /* Leaves enough room for the ::after hint */
-}
-
-.retro .skillset-table > caption::after {
-  content: '\A(hover for details)';
-  font-size: 0.8rem;
-  font-weight: normal;
-  white-space: pre;
-}
-
-.retro .skillset-table .skillset-item {
-  cursor: help;
-  position: relative;
-  text-decoration: underline;
-  margin-top: 0.5rem;
-}
-
-.retro .skillset-table .skillset-item:last-child {
-  margin-bottom: 0.5rem;
-}
-
-/* Hover text for skillset table items */
-.retro .skillset-table .skillset-item:hover::after {
-  background-color: #fff;
-  color: #111;
+/* Navigation */
+.retro .sidebar {
   border: 1px solid #000;
-  content: attr(data-title);
-  right: 0;
-  line-height: 1.2;
-  padding: 8px;
-  position: absolute;
-  top: 1.75rem;
-  width: 16rem;
-  white-space: pre-line;
-  z-index: 1;
+  margin: 0 2rem 2rem 2rem;
+  min-width: 10rem;
+}
+.retro .sidebar::before {
+  content: "Navigation";
+  display: block;
+  font-weight: bold;
+}
+.retro .sidebar .sidebar__photo {
+  display: none;
+}
+.retro .sidebar::before,
+.retro .nav .nav__item {
+  text-align: center;
+  line-height: 2rem;
+}
+.retro .sidebar::before,
+.retro .nav .nav__item:not(:last-child) {
+  border-bottom: 1px solid #000;
 }
 
-/* */
+/* About section */
+.retro .section_about .about__skill {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.retro .section_about .about__skill > div {
+  display: inline;
+}
+.retro .section_about .about__skill > img {
+  display: none;
+}
 
-/* Employment history */
-
+/* Experience section */
 .retro .employment-item {
-  margin: 2rem 0;
+  margin-top: 1.5rem;
 }
 
-/* */
+/* Showcase section */
 
-/* Project items */
-
-.retro .project-group {
+.retro .section_showcase .showcase__projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.retro .project-item {
+.retro .showcase__projects .project {
   align-items: center;
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
-  margin: 16px;
-  padding: 16px;
-  width: 360px;
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(24.5rem + 2px);
 }
 
-.retro .project-item > .project-thumbnail {
+.retro .project > .project__thumbnail {
   border: 1px solid #000;
 }
 
-.retro .project-item > .project-title {
-  margin-bottom: 0.5rem;
+.retro .project > .project__title {
+  margin-bottom: .5rem;
 }
 
-.retro .project-item > .project-links {
-  margin-top: 0.5rem;
+.retro .project > .project__links {
+  margin-top: .5rem;
 }
 
-.retro .project-item > .project-links > li {
+.retro .project > .project__links > li {
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
-
-/* */
