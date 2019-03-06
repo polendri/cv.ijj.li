@@ -71,6 +71,18 @@ html {
 }
 
 /* Define new default styles for elements */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+/* Workaround for Firefox behaviour of displaying <img> alt text while the image is loading
+ * See https://bugzilla.mozilla.org/show_bug.cgi?id=1472637
+ */
+img:-moz-loading {
+  visibility: hidden;
+}
 body {
   height: 100vh;
   font-size: 1rem;
@@ -101,12 +113,6 @@ strong {
   font-size: 2rem;
 }
 
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
 /* Page layout */
 .cv {
   min-width: 22rem;
