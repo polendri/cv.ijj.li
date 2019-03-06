@@ -399,6 +399,7 @@ body {
   flex: none;
   background-repeat: no-repeat;
   background-size: contain;
+  min-width: 1rem;
   height: 1rem;
 }
 .cv .section_about .about__skill_webservices {
