@@ -257,6 +257,10 @@ strong {
   text-align: center;
   padding: .5rem 0;
 }
+.cv .footer .footer__surprise {
+  color: #fff;
+  text-decoration-color: #fff;
+}
 @media screen and (min-width: 40rem) {
   .cv .nav .nav__item {
     width: 22%;
