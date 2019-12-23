@@ -6,19 +6,87 @@
  */
 
 /* Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,22 +94,35 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 body {
   line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 table {
@@ -51,7 +132,9 @@ table {
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -61,15 +144,18 @@ html {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("../fonts/FiraSansBold.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"),
+    url("../fonts/FiraSansBold.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Icons";
   font-style: normal;
   font-weight: normal;
   font-display: block;
-  src: url('../fonts/Icons.woff2') format("woff2");
+  src: url("../fonts/Icons.woff2") format("woff2");
 }
 
 /* Define new default styles for elements */
@@ -119,10 +205,11 @@ strong {
 .cv {
   min-width: 22rem;
   display: grid;
-  grid: "title nav" 4rem
-        "main main" 1fr
-        "footer footer" auto
-        / max-content minmax(0, 1fr);
+  grid:
+    "title nav" 4rem
+    "main main" 1fr
+    "footer footer" auto
+    / max-content minmax(0, 1fr);
   background-color: #f6f6f6;
 }
 .cv .title {
@@ -139,10 +226,11 @@ strong {
 }
 @media screen and (min-width: 54rem) {
   .cv {
-    grid: "title main" auto
-          "nav main" 1fr
-          "footer main" auto
-          / 18rem 1fr;
+    grid:
+      "title main" auto
+      "nav main" 1fr
+      "footer main" auto
+      / 18rem 1fr;
   }
 }
 @media screen and (min-width: 74rem) {
@@ -160,13 +248,21 @@ strong {
   /* Pattern by Atle Mo and Sébastien Grosjean
    * https://leaverou.github.io/css3patterns/#carbon */
   background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-              linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-              linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-              linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-              linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-              linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-              background-color: #131313;
-              background-size: 20px 20px;
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-color: #131313;
+  background-size: 20px 20px;
 }
 .cv .title,
 .cv .sidebar {
@@ -174,7 +270,7 @@ strong {
 }
 .cv .title .title__heading {
   margin: 0 0 0 4rem;
-  padding: .75rem .5rem;
+  padding: 0.75rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-align: center;
@@ -182,7 +278,7 @@ strong {
 .cv .title .title__heading::after {
   display: block;
   content: "Software Developer";
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1rem;
 }
 .cv .sidebar {
@@ -190,8 +286,8 @@ strong {
 }
 .cv .sidebar .sidebar__photo {
   position: absolute;
-  top: .5rem;
-  left: .5rem;
+  top: 0.5rem;
+  left: 0.5rem;
   display: block;
   width: 3rem;
   height: 3rem;
@@ -207,7 +303,7 @@ strong {
   color: #fff;
 }
 .cv .sidebar__nav .nav__item a:hover {
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .cv .nav ul {
   display: flex;
@@ -219,12 +315,12 @@ strong {
 .cv .nav .nav__item a {
   display: block;
   height: 100%;
-  padding-left: calc(50% - .5rem);
+  padding-left: calc(50% - 0.5rem);
   line-height: 4rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
   color: transparent;
 }
 .cv .nav .nav__item a::before {
@@ -252,10 +348,10 @@ strong {
   color: #00c853;
 }
 .cv .footer {
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1rem;
   text-align: center;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 .cv .footer .footer__surprise {
   color: #fff;
@@ -296,10 +392,10 @@ strong {
     margin: auto;
     width: 13.5rem;
     height: 13.5rem;
-    box-shadow: 0 0 .5rem #000;
+    box-shadow: 0 0 0.5rem #000;
   }
   .cv .sidebar .sidebar__nav {
-    padding: 2rem 0 .5rem 0;
+    padding: 2rem 0 0.5rem 0;
   }
   .cv .sidebar .sidebar__nav,
   .cv .sidebar .sidebar__nav ul {
@@ -322,7 +418,7 @@ strong {
     font-family: "Icons";
     width: 2.625rem;
     text-align: center;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
   .cv .footer .footer__surprise {
     display: block;
@@ -375,13 +471,13 @@ strong {
   justify-content: space-evenly;
   color: #fff;
   background-color: #dd2c00;
-  border-radius: .5rem;
-  margin: .25rem;
-  padding: 0 .5rem .5rem .5rem;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
   font-family: "Fira Sans", sans-serif;
 }
 .cv .section_about .about__skill * {
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 .cv .section_about .about__skill:hover * {
   opacity: 0;
@@ -389,14 +485,14 @@ strong {
 .cv .section_about .about__skill::after {
   position: absolute;
   content: "";
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
   line-height: 1.25rem;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 .cv .section_about .about__skill:hover::after {
   opacity: 1;
@@ -404,7 +500,7 @@ strong {
 .cv .section_about .about__skill > div {
   flex: 0 0 100%;
   font-size: 1.25rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 .cv .section_about .about__skill > img {
@@ -448,10 +544,11 @@ strong {
 /* Experience/Education sections */
 .cv .employment-item {
   display: grid;
-  grid: "logo title" auto
-        "logo period" auto
-        "details details" auto
-        / auto 1fr;
+  grid:
+    "logo title" auto
+    "logo period" auto
+    "details details" auto
+    / auto 1fr;
 }
 .cv .employment-item:not(:first-child) {
   margin-top: 1rem;
@@ -465,6 +562,9 @@ strong {
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
+}
+.cv .employment-item_al::before {
+  background-image: url("../img/companies/art_and_logic.png");
 }
 .cv .employment-item_reliable::before {
   background-image: url("../img/companies/reliable_controls.png");
@@ -482,13 +582,13 @@ strong {
   background-image: url("../img/companies/university_of_waterloo.png");
 }
 .cv .employment-item__title {
-  grid-area: title
+  grid-area: title;
 }
 .cv .employment-item__period {
-  grid-area: period
+  grid-area: period;
 }
 .cv .employment-item__details {
-  grid-area: details
+  grid-area: details;
 }
 
 /* Showcase section */
@@ -503,8 +603,8 @@ strong {
   flex-direction: column;
   max-width: calc(22.5rem + 2px);
   border: 1px solid #ddd;
-  border-radius: .25rem;
-  box-shadow: 0 0 .25rem #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem #ddd;
 }
 .cv .project > * {
   margin: 1rem;
@@ -513,9 +613,9 @@ strong {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #ddd;
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
-  margin: 0 0 .1875rem 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  margin: 0 0 0.1875rem 0;
 }
 .cv .project .project__title {
   font-family: "Fira Sans", sans-serif;
@@ -529,17 +629,17 @@ strong {
   display: inline-block;
 }
 .cv .project .project__links li:not(:last-child) {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .cv .project .project__links a {
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-family: "Fira Sans", sans-serif;
   background-color: #dd2c00;
   color: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
 }
 .cv .project .project__links a:hover {
   background-color: #ff6434;
